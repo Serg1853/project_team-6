@@ -15,6 +15,10 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+/* modal windows */
+@import url('./buy_now.css');
+@import url('./leave_a_review.css');
+@import url('./explore_our.css');
 
 :root {
   font-family: 'Montserrat', sans-serif;
