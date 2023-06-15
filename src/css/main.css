@@ -1,0 +1,26 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./advantages.css');
+@import url('./unique_components.css');
+@import url('./how_it’s_made.css');
+@import url('./our_products.css');
+@import url('./top_sellers.css');
+@import url('./reviews.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
