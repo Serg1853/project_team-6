@@ -1,0 +1,64 @@
+/*========== How it's made? =========*/
+
+.how-its-made {
+  margin-bottom: 72px;
+}
+
+.accent-title {
+  color: var(--accent-color);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.how-its-made-list-topic {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+
+.how-its-made-list-wrapper {
+  padding: 20px 14px;
+}
+
+.how-its-made-list-item {
+  margin-left: 16px;
+}
+
+.how-its-made-list .how-its-made-list-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .how-its-made {
+    margin-bottom: 100px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
+
+  .how-its-made-list-wrapper {
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .how-its-made {
+    margin-bottom: 128px;
+  }
+
+  .how-its-made-list .how-its-made-list-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
