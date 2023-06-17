@@ -2,7 +2,7 @@
   padding-top: 20px;
 }
 .container {
-  max-width: 375px;
+  width: 100%;
   outline: 1px solid tomato;
 }
 .page-header-container {
@@ -10,8 +10,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .header-logo {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
   font-style: italic;
   font-weight: 700;
   line-height: 1.29;
@@ -21,6 +25,7 @@
 .headre-logo-span {
   font-style: normal;
 }
+
 .header-menu-btn {
   border: none;
   background-color: transparent;
@@ -28,7 +33,29 @@
   padding: 0;
   margin: 0;
 }
-
+@media screen and (min-width: 768px) {
+  .header-menu-btn-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .mobile-menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    fill: #ffffff;
+  }
+  .header-mobile-menu {
+    width: 290px;
+  }
+}
 /* mobile menu */
 .header-mobile-menu {
   position: absolute;
@@ -61,22 +88,24 @@
   background-color: transparent;
   fill: #ffffff;
 }
-
-/* .header-mobile-menu:hover {
-  transform: translatex(100%);
-  fill: tomato;
-} */
+.mobile-menu-close-btn:hover,
+.mobile-menu-close-btn:focus {
+  width: 40px;
+  height: 40px;
+  fill: #fd9222;
+}
 .header-mobile-menu-list {
-  position: absolute;
+  /* position: absolute;
   top: 136px;
-  left: 50px;
-  /* padding-top: 136px;
+  left: 50px; */
+  padding-top: 136px;
   padding-right: 46px;
-  padding-left: 50px; */
+  padding-left: 50px;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 }
+
 .header-mobile-menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -84,14 +113,52 @@
   letter-spacing: -0.02em;
   color: #ffffff;
 }
+.header-mobile-menu-link:hover,
+.header-mobile-menu-link:focus {
+  color: #fd9222;
+}
+@media screen and (min-width: 768px) {
+  .header-mobile-menu-link {
+    font-weight: 600;
+  }
+  .header-mobile-menu {
+    width: 290px;
+  }
+}
 .header-mobile-menu-list-social {
   position: absolute;
   left: 20px;
   bottom: 20px;
   display: flex;
   justify-content: start;
+  align-items: center;
   column-gap: 18px;
 }
-.header-menu-social-icon {
+.header-mobile-menu-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: #ffffff;
+}
+.header-mobile-menu-social-link:hover,
+.header-mobile-menu-social-link:focus {
+  fill: #fd9222;
+}
+@media screen and (min-width: 768px) {
+  .header-menu-social-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-menu-btn {
+    display: none;
+  }
+  .header-mobile-menu {
+    display: none;
+  }
+  .header-menu-desktop {
+    display: flex;
+    color: #000;
+  }
 }
