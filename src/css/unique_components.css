@@ -6,70 +6,204 @@
 }
 .container {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  
 }
 @media screen and (min-width: 375px) {
-  .container {
-    max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 .unique-components-head-text {
-  width: 283px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  max-width: 283px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
 }
 .tasty-color {
-  color: #fd9222;
+  color: var(--accent-color);
 }
-.unique-components-paragraph{   
-    width: 335px;
-line-height: 1.29;
-text-align: center;
-margin-left: auto;
+.unique-components-paragraph {
+  margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
+  width: 335px;
+  line-height: 1.29;
+  text-align: center;
 }
-.unique-components-list{
-    display: flex;
-    flex-direction:column;
-    gap: 20px;
+.unique-components-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
-.unique-components-block{
-    width: 335px;
-height: 270px;
-border-radius: 15px;
+.unique-components-block {
+  width: 335px;
+  height: 270px;
+  border-radius: 15px;
 }
-.orange-back{
-  background: #FD9222;  
+.orange-back {
+  background: var(--accent-color);
 }
-.white-back{
-background: #FFFFFF;
-border: 1px solid #FD9222;
+.white-back {
+  background: var(--text-color-theme-dark);
+  border: 1px solid var(--accent-color);
 }
-.gray-back{
-background: #1E1823;
+.gray-back {
+  background: #1e1823;
 }
-.unique-components-img{
+.unique-components-img {
   padding-top: 28px;
-    margin-left: auto;
-  margin-right: auto;  
+  margin-left: auto;
+  margin-right: auto;
 }
-.unique-components-text-under-img{
-font-family: 'Montserrat';
-font-style: normal;
+.unique-components-text-under-img {
+  padding: 25px 0px 28px 28px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--text-color-theme-dark);
+}
+.dark-text {
+  color: var(--text-color-theme-light);
+}
+/* overlay */
+.card {
+  position: relative;
+  width: 335px;
+  height: 270px;
+  color: white;
+}
+.unique-components-block {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-back {
+  padding: 28px;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  border-radius: 15px;
+  border-color: var(--accent-color);
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: var(--text-color-theme-dark);
+  transform: rotateY(-180deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover .card-back {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+.card:hover .unique-components-block {
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+.card-text-main {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-color-theme-light);
+}
+.card-button-position {
+  margin-bottom: 14px;
+  display: flex;
+  gap: 8px;
+}
+.card-button {
+  padding: 6px 16px;
+  min-width: 81px;
+  height: 24px;
+  border: none;
+  border-radius: 35px;
+  font-size: 10px;
+  line-height: 1.2;
+  background: #fafafa;
+  border: 1px solid var(--accent-color);
+  color: var(--text-color-theme-light);
+}
+
+.card-button:hover,
+.card-button:focus {
+  background-color: var(--accent-color);
+  color: var(--text-color-theme-dark);
+}
+.card-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--text-color-theme-light);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .unique-components-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .first-card {
+    order: 1;
+  }
+  .second-card {
+    order: 3;
+  }
+  .third-card {
+    order: 4;
+  }
+  .fourth-card {
+    order: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .unique-components-head-text{
+    width: 411px ;
 font-weight: 600;
-font-size: 14px;
-line-height: 1.29;
-letter-spacing: -0.02em;
-text-transform: uppercase;
-color: #FFFFFF;}
+font-size: 24px;
+line-height: 1.17;
+  }
+  .unique-components-list {
+    flex-wrap: nowrap;
+    gap: 18px;
+  }
+  .unique-components-block {
+    width: 270px;
+  }
+  .card {
+    width: 270px;
+  }
+  .card-back {
+    padding: 20px;
+  }
+  .first-card {
+    order: 1;
+  }
+  .second-card {
+    order: 2;
+  }
+  .third-card {
+    order: 3;
+  }
+  .fourth-card {
+    order: 4;
+  }
+}
