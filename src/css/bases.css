@@ -2,6 +2,10 @@
   --text-color-theme-dark: #ffffff;
   --text-color-theme-light: #111111;
   --accent-color: #fd9222;
+
+  /* для svg */
+  --color1: #fff;
+  --color2: #fd9222;
 }
 
 body {
