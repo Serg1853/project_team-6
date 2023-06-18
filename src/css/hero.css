@@ -1,0 +1,307 @@
+/* :root {
+    --color1: #fff;
+    --color2: #fd9222;
+
+} */
+
+
+.section-hero {
+    padding-bottom: 72px;
+}
+
+.hero-picture {
+    background-color: #FCF1E0;
+    border-radius: 30px;
+
+    padding-top: 395px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+
+
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/mobile/chocolate-covered-cocoa-powder.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 375px),
+screen and (min-resolution: 192dpi) and (min-width: 375px),
+screen and (min-resolution: 2dppx) and (min-width: 375px) {
+    .hero-picture {
+
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/mobile/chocolate-covered-cocoa-powder@2x.jpg);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero-picture {
+
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/tablet/chocolate-covered-cocoa-powder.jpg);
+        padding-top: 670px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero-picture {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/tablet/chocolate-covered-cocoa-powder@2x.jpg);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .hero-picture {
+
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/tablet/chocolate-covered-cocoa-powder.jpg);
+        padding-top: 380px;
+
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero-picture {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/desktop/chocolate-covered-cocoa-powder@2x.jpg);
+    }
+}
+
+
+.container-section-hero {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    gap: 32px;
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 375px) {
+    .container-section-hero {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-section-hero {
+        margin: 0 40px;
+    }
+}
+
+.hero-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    width: 260px;
+
+
+}
+
+@media screen and (min-width: 375px) {
+    .hero-text {
+        width: 295px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-text {
+        width: 484px;
+        font-size: 28px;
+    }
+}
+
+.hero-container-btn {
+    display: flex;
+
+}
+
+@media screen and (max-width: 767px) {
+    .hero-container-btn {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-container-btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.hero-container-two-btn {}
+
+.hero-btn {
+    display: flex;
+    gap: 14px;
+}
+
+.list-btn-hero {}
+
+
+.modal-btn-buy {
+    min-width: 90px;
+
+    padding: 12px 20px;
+    background-color: #FD9222;
+    border-radius: 100px;
+    border: none;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+@media screen and (min-width: 375px) {
+    .modal-btn-buy {
+        min-width: 120px;
+        padding: 12px 26px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-btn-buy {
+        min-width: 144px;
+        padding: 14px 40px;
+    }
+}
+
+
+.modal-btn-buy:hover,
+.modal-btn-buy:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+
+.modal-btn-two {
+
+    min-width: 100px;
+
+    padding: 12px 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: block;
+    background-color: transparent;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+@media screen and (min-width: 375px) {
+    .modal-btn-two {
+        min-width: 159px;
+        padding: 12px 28px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-btn-two {
+        min-width: 183px;
+        padding: 14px 40px;
+    }
+}
+
+.modal-btn-two:hover,
+.modal-btn-two:focus {
+    color: rgba(253, 146, 34, 1);
+    border: 1px solid rgba(253, 146, 34, 1);
+}
+
+
+.modal-btn-three {
+    max-width: 120px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+
+
+    display: flex;
+    align-items: center;
+
+
+    background-color: transparent;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .modal-btn-three {
+        max-width: 130px;
+        font-size: 14px;
+        line-height: 1.28;
+
+    }
+}
+
+.modal-btn-three:hover,
+.modal-btn-three:focus {
+    color: rgba(253, 146, 34, 1);
+
+}
+
+@media screen and (max-width: 767px) {
+    .hero-icon-tablet {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-icon-mobile {
+        display: none;
+    }
+}
+
+.hero-icon {
+    fill: var(--color1);
+    color: var(--color2);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-left: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-icon {
+        margin-left: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .hero-icon {
+        fill: transparent;
+    }
+}
+
+.modal-btn-three:hover .hero-icon,
+.modal-btn-three:focus .hero-icon {
+    fill: var(--color2);
+    color: var(--color1);
+}
