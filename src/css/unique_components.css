@@ -4,13 +4,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-.container{
+.container {
   width: 100%;
 }
 @media screen and (min-width: 375px) {
-  .container{
-  width: 375px;
-}
+  .container {
+    width: 375px;
+  }
 }
 .unique-components-head-text {
   margin-left: auto;
@@ -56,12 +56,10 @@
   background: #1e1823;
 }
 .unique-components-img {
-  padding-top: 28px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 28px 56px 0 56px;
 }
 .unique-components-text-under-img {
-  padding: 25px 0px 28px 28px;
+  padding: 25px 0px 0px 28px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -156,13 +154,12 @@
     padding-left: 32px;
     padding-right: 32px;
   }
-   .unique-components-head-text{
-    max-width: 411px ;
-font-weight: 600;
-font-size: 24px;
-line-height: 1.17;
+  .unique-components-head-text {
+    max-width: 411px;
+    font-size: 24px;
+    line-height: 1.17;
   }
-  .unique-components-paragraph{
+  .unique-components-paragraph {
     max-width: 486px;
   }
   .unique-components-list {
@@ -187,13 +184,19 @@ line-height: 1.17;
   .container {
     width: 1200px;
   }
- 
+
   .unique-components-list {
     flex-wrap: nowrap;
     gap: 18px;
   }
   .unique-components-block {
     width: 270px;
+  }
+  .unique-components-img {
+    padding: 28px 36px 0 28px;
+  }
+  .unique-components-text-under-img {
+    padding-top: 36px;
   }
   .card {
     width: 270px;
