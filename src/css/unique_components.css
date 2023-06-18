@@ -4,10 +4,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-.container {
+.container{
   width: 100%;
 }
 @media screen and (min-width: 375px) {
+  .container{
+  width: 375px;
+}
 }
 .unique-components-head-text {
   margin-left: auto;
@@ -27,7 +30,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
-  width: 335px;
+  max-width: 335px;
   line-height: 1.29;
   text-align: center;
 }
@@ -153,6 +156,15 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+   .unique-components-head-text{
+    max-width: 411px ;
+font-weight: 600;
+font-size: 24px;
+line-height: 1.17;
+  }
+  .unique-components-paragraph{
+    max-width: 486px;
+  }
   .unique-components-list {
     flex-wrap: wrap;
     flex-direction: row;
@@ -175,12 +187,7 @@
   .container {
     width: 1200px;
   }
-  .unique-components-head-text{
-    width: 411px ;
-font-weight: 600;
-font-size: 24px;
-line-height: 1.17;
-  }
+ 
   .unique-components-list {
     flex-wrap: nowrap;
     gap: 18px;
