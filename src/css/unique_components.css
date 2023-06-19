@@ -1,4 +1,4 @@
-.section {
+.section-unique-components {
   padding-top: 72px;
   padding-bottom: 72px;
   margin-left: auto;
@@ -201,6 +201,9 @@
   .card {
     width: 270px;
   }
+  .card-text {
+  font-size: 12px;}
+
   .card-back {
     padding: 20px;
   }
