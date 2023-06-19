@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Subscribe  -->
+    <div class="wallpaper" style="background-image: url(./img/chocolate.jpg)">
+      <h1 class="title">
+        EXPLORE OUR NEW <br />
+        CHOCOLATE FIRST
+      </h1>
+      <p class="description">
+        From the velvety texture to the rich and complex flavor, our New <br />
+        Chocolate is a true indulgence that will leave you craving more. Made
+        <br />
+        with only the finest ingredients and handcrafted with the utmost <br />
+        care, each piece is a work of art that is sure to please.
+      </p>
+      <button class="button_1 button-large" type="button" data-modal-open>
+        <span class="text_1">Subscribe</span>
+      </button>
+    </div>
+    <!-- Modal_window  -->
+    <div class="backfon is-hidden" data-modal>
+      <button class="btnmodal" type="button" data-modal-close>
+        <svg class="modal-close" width="8" height="8">
+          <use href="./img/icon.svg#icon-modal"></use>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <img src="./img/black_chocolate.jpg" alt="chocolate" />
+        <h2>
+          EXPLORE OUR <br />
+          <span class="new_chocolate">NEW CHOCOLATE</span> FIRST!
+        </h2>
+
+        <label class="footer-form-label">
+          <input
+            type="email"
+            name="user_email"
+            class="footer-form-input"
+            required
+            placeholder="     E-mail"
+          />
+        </label>
+        <button class="button_2" type="submit">
+          <span class="text_2">Subscribe</span>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
