@@ -20,8 +20,22 @@
 
 .how-its-made-list-topic {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.33;
+}
+
+.how-its-made-list-item {
+  font-size: 11px;
+}
+
+@media screen and (min-width: 375px) {
+  .how-its-made-list-topic {
+    font-size: 18px;
+  }
+
+  .how-its-made-list-item {
+    font-size: 14px;
+  }
 }
 
 .how-its-made-list-topic-wrapper {
