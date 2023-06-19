@@ -2,9 +2,15 @@
   padding-top: 20px;
   padding-bottom: 14px;
 }
+
 .container {
   width: 100%;
   /* outline: 1px solid tomato; */
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 .page-header-container {
   display: flex;
