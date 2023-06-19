@@ -185,7 +185,7 @@ ul {
     border: 1px solid var(--color1);
     font-weight: 600;
     line-height: calc(17 / 14);
-    color: var(--white-color);
+    color: var(--color1);
     background-color: transparent;
     transition: transform .25s cubic-bezier(.4,0,.2,1),border-color 10ms cubic-bezier(.4,0,.2,1),color .25s cubic-bezier(.4,0,.2,1),background-color .25s cubic-bezier(.4,0,.2,1);
 }
@@ -214,52 +214,4 @@ ul {
     background-color: var(--accent-color);
   }
   
-  /* ========= Swiper =============*/
-  
-  @media screen and (min-width: 375px) and (max-width: 767px) {
-    .container.reviews-section-content {
-      width: 734px;
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .reviews-section {
-      padding-bottom: 100px;
-    }
-    .container.reviews-section-content {
-      width: 100%;
-    }
-  
-    .reviews-item {
-      flex-basis: calc((100% - 16px) / 2);
-    }
-  
-    .reviews-thumb {
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    .reviews-section {
-      padding-bottom: 128px;
-    }
-  
-    .container.reviews-section-content {
-      max-width: 1166px;
-    }
-  
-    .reviews-item {
-      flex-basis: calc((100% - 32px) / 3);
-    }
-  
-    .reviews-thumb {
-      padding-left: 24px;
-      padding-right: 24px;
-      padding-bottom: 26px;
-      padding-top: 56px;
-    }
-  
-  
-  }
-
+ 

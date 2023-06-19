@@ -1,0 +1,380 @@
+:root {
+    --text-color-theme-dark: #ffffff;
+    --text-color-theme-light: #111111;
+    --accent-color: #fd9222;
+  
+    /* для svg */
+    --color1: #fff;
+    --color2: #fd9222;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #111111;
+    background-color: #fafafa;
+  }
+  
+  /* Reset styles */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .list {
+    list-style: none;
+  }
+  .link {
+    text-decoration: none;
+  }
+  
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* прихований заголовок */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 375px) {
+    .container {
+      width: 335px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 704px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1136px;
+    }
+    .reviews-block {
+      display: flex;
+    }
+  }
+/* Leave-Review Modal Window */
+
+.modal-leave-review {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 32px 24px;
+    border-radius: 15px;
+  
+    min-width: 311px;
+    height: 525px;
+    max-height: 90vh;
+    overflow-y: scroll;
+    background-color: var(--color1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .backdrop.is-hidden .modal-leave-review {
+    transform: translate(-50%, -50%) scale(1.1);
+  
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-leave-review::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(26, 24, 47, 0.15);
+    border-radius: 5px;
+    height: 200px;
+  }
+  
+  .modal-leave-review::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+  }
+  
+  @media screen and (min-height: 707px) {
+    .modal-leave-review {
+      overflow-y: hidden;
+    }
+  }
+  
+  .modal-leave-review-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 6px;
+  }
+  
+  .modal-leave-review-close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-leave-review-close-btn-icon:hover,
+  .modal-leave-review-close-btn-icon:focus {
+    transform: scale(1.1);
+    fill: var(--main-accent-color);
+  }
+  
+  .modal-leave-review-close-btn-icon:active {
+    transform: scale(1.1);
+    fill: var(--main-accent-color);
+  }
+  
+  .modal-leave-review-text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+  }
+  
+  .modal-leave-review-text-accent {
+    color: var(--accent-color);
+  }
+  
+  .modal-leave-review-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-leave-review-input {
+    padding: 14px 18px;
+    width: 100%;
+  
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 13px;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+  
+    box-shadow: 0px 5.44px 5.44px rgba(0, 0, 0, 0.03);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-leave-review-input:focus,
+  .modal-leave-review-input:hover,
+  .modal-leave-review-form-message:hover,
+  .modal-leave-review-form-message:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+  
+  .modal-leave-review-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(64, 64, 64, 0.3);
+  }
+  
+  .modal-leave-review-form-filed {
+    display: block;
+    margin-bottom: 14px;
+  }
+  
+  .modal-leave-review-form-message {
+    display: block;
+    width: 100%;
+    height: 137px;
+    padding: 14px 18px;
+  
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 13px;
+    box-shadow: 0px 5.44px 5.44px rgba(0, 0, 0, 0.03);
+    resize: none;
+  
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-leave-review-form-filed-message {
+    margin-bottom: 18px;
+  }
+  
+  .modal-leave-review-form-sumbit {
+    min-width: 117px;
+    padding: 12px 28px;
+    background-color: var(--accent-color);
+    border: none;
+    align-self: flex-start; 
+    border-radius: 100px;
+  
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: var(--text-color-theme-dark);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-leave-review-form-sumbit:hover,
+  .modal-leave-review-form-sumbit:focus {
+    color: var(--accent-color);
+    background-color: var(--color1);
+  }
+  
+  .modal-leave-review-input::placeholder,
+  .modal-leave-review-form-message::placeholder {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+  }
+  
+  .leave-review-input-tel {
+    padding-left: 106px;
+  }
+  
+  .modal-leave-review-input-wrapper {
+    display: block;
+    position: relative;
+  }
+  
+  .leave-review-input-tel-icon {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translate(0, -50%);
+  }
+  
+  .leave-review-input-tel-text {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(0, -50%);
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+  }
+  
+  .leave-review-input-tel-text::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    width: 1px;
+    height: 32px;
+    background-color: rgba(64, 64, 64, 0.3);
+  }
+  
+  /*Tablet */
+  
+  @media screen and (min-width: 768px) {
+    .modal-leave-review-close-btn-icon {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .modal-leave-review {
+      padding: 40px 40px;
+      border-radius: 15px;
+  
+      min-width: 517px;
+      height: 640px;
+      background-color: var(--body-bg-color);
+    }
+  
+    .modal-leave-review-text {
+      margin-bottom: 40px;
+  
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  
+    .modal-leave-review-form-filed {
+      margin-bottom: 19px;
+    }
+  
+    .modal-leave-review-input {
+      padding: 22px 24px;
+  
+      border-radius: 13px;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  
+    .leave-review-input-tel {
+      padding-left: 177px;
+    }
+  
+    .leave-review-input-tel-text {
+      left: 74px;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  
+    .leave-review-input-tel-text::after {
+      right: -32px;
+    }
+  
+    .leave-review-input-tel-icon {
+      width: 32px;
+      height: 24px;
+      left: 24px;
+    }
+  
+    .modal-leave-review-form-message {
+      padding: 22px 24px;
+  
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  
+    .modal-leave-review-input::placeholder,
+    .modal-leave-review-form-message::placeholder {
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: -0.02em;
+      color: rgba(64, 64, 64, 0.3);
+    }
+  
+    .modal-leave-review-form-sumbit {
+      padding: 14px 40px;
+    }
+  }
