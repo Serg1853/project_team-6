@@ -59,6 +59,9 @@
   }
 }
 .top-sellers-button {
+  font-family: var(--primary-font);
+  font-style: normal;
+  min-width: 90px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
@@ -66,7 +69,15 @@
   background-color: #fd9222;
   color: #ffffff;
   border-radius: 100px;
-  border-color: transparent;
+  border: none;
+  box-shadow: 0 4px 4px #00000026;
+  display: block;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.top-sellers-button:hover,
+.top-sellers-button:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 @media screen and (min-width: 768px) {
   .top-sellers-title {
@@ -80,6 +91,7 @@
   }
   .top-sellers-button {
     min-width: 162px;
+    padding: 14px 40px;
   }
 }
 @media screen and (min-width: 1200px) {
