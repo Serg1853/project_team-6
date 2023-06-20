@@ -87,9 +87,6 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1136px;
-  }
   .reviews-block {
     display: flex;
   }
