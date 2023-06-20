@@ -127,3 +127,10 @@ margin-top: 32px;
         margin-bottom: 64px;
     }
 }
+.footer-menu-item:hover,
+.footer-menu-item:focus {
+ color: #fd9222;
+}
+.footer-social-icons:hover,
+.footer-social-icons:focus{
+  fill: #fd9222;}
