@@ -2,6 +2,7 @@
     --advantages-bg-color: #1E1823;
     --advantages-titel-color: #ffffff;
     --advantages-text-color: rgba(255, 255, 255, 0.7);
+    --advantages-accent-color: #FD9222;
 }
 
 .advantages-section {
@@ -22,7 +23,7 @@
 }
 
 .advantages-svg {
-    fill: currentColor;
+    fill: var(--advantages-accent-color);
 }
 
 .advantages-titel {
@@ -50,14 +51,10 @@
         padding: 20px;
     }
 
-    .advantages-item:not(:last-child) {
-        margin-bottom: 38px;
-    }
-
     .advantages-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 32px 60px;
+        gap: 20px;
     }
 
     .advantages-item {
