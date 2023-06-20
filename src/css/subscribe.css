@@ -1,20 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+:root {
+    --subscribe-titel-color: #ffffff;
+    --subscribe-text-color: #ffffff;
+    --subscribe-accent-btn-color: #FD9222;
+    --subscribe-accent-btn-focus-color: #FCF1E0;
+}
 
-.subscribe_wallpaper {
-    background-image: url(./img/chocolate.jpg);
+
+.subscribe-section {
+    text-align: center;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.subscribe-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 0px;
+    gap: 24px;
+}
+
+.subscribe-title {
+    max-width: 291px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
     text-align: center;
-    height: 370px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--subscribe-titel-color);
+}
+
+.subscribe-text {
+    width: 467px;
+    height: 72px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
 
 }
 
-.subscribe_button_1,
-.subscribe_button-large {
+.subscribe-btn-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--subscribe-text-color);
+}
+
+.subscribe-button,
+.subscribe-button-large {
     border: 0;
     display: flex;
     flex-direction: row;
@@ -23,158 +62,112 @@
     gap: 14px;
     width: 128px;
     height: 41px;
-    background: #FD9222;
+    background: var(--subscribe-accent-btn-color);
     border-radius: 100px;
 }
 
-.subscribe_button_1:hover,
-.subscribe_button_1:focus {
-    background-color: #FCF1E0;
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: var(--subscribe-accent-btn-focus-color);
 }
 
-.subscribe_button_1:hover .subscribe_text_1,
-.subscribe_button_1:focus .subscribe_text_1 {
-    color: #FD9222;
+.subscribe-button:hover .subscribe-btn-text,
+.subscribe-button:focus .subscribe-btn-text {
+    color: var(--subscribe-accent-btn-color);
 }
 
-.subscribe_text_1 {
-    font-family: 'Montserrat', sans-serif;
-    width: 72px;
-    height: 17px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-}
+/*========== MEDIA ==========*/
 
-.subscribe_description {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 0 12px;
-}
+/*========== MOBILE ==========*/
 
-.subscribe_title {
-    font-family: 'Montserrat', sans-serif;
-    width: 291px;
-    height: 48px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
+@media screen and (max-width: 767px) {
 
-/* Tablet  */
-@media screen and (min-width:375px) and (max-width:768px) {
-    .subscribe_title {
-        font-family: 'Montserrat', sans-serif;
-        width: 378px;
-        height: 56px;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 28px;
-        text-align: center;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: #FFFFFF;
+    .subscribe-section {
+        padding: 62px 0;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(./img/subscribe/mobile@1x/chocolate-mb@1x.jpg);
     }
 
-    .subscribe_description {
-        font-family: 'Montserrat', sans-serif;
-        width: 326px;
+    .subscribe-text {
+        width: 100%;
         height: 108px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #FFFFFF;
-    }
-    .subscribe_button_1 {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 12px 28px;
-        gap: 14px;
-        width: 128px;
-        height: 41px;
-        background: #FD9222;
-        border-radius: 100px;
     }
 
-    .subscribe_text_1 {
-        font-family: 'Montserrat', sans-serif;
-        width: 72px;
-        height: 17px;
-        font-style: normal;
-        font-weight: 600;
+    .subscribe-btn-text {
         font-size: 14px;
-        line-height: 17px;
-        color: #FFFFFF;
     }
 }
 
-/* Desktop  */
-@media screen and (min-width:768px) and (max-width:1200px) {
-    .subscribe_title {
-        font-family: 'Montserrat', sans-serif;
-        width: 378px;
-        height: 56px;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 28px;
-        text-align: center;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: #FFFFFF;
+@media screen and(min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi),
+screen and(min-resolution: 2dppx) {
+
+    .subscribe-section {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(./img/subscribe/mobile@2x/chocolate-mb@2x.jpg);
+    }
+}
+
+/*========== TABLET ==========*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .subscribe-section {
+        padding: 72px 0;
+        background-position: center;
+        background-size: cover;
+
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(./img/subscribe/tablet@1x/chocolate-tab@1x.jpg);
     }
 
-    .subscribe_description {
-        font-family: 'Montserrat', sans-serif;
-        width: 467px;
-        height: 72px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #FFFFFF;
-    }
-
-    .subscribe_button_1 {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+    .subscribe-button {
         padding: 14px 40px;
-        gap: 14px;
         width: 172px;
         height: 50px;
-        background: #FD9222;
-        border-radius: 100px;
     }
 
-    .subscribe_text_1 {
-        font-family: 'Montserrat', sans-serif;
-        width: 92px;
-        height: 22px;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
+
+}
+
+@media screen and(min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi),
+screen and(min-resolution: 2dppx) {
+    .subscribe-section {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(./img/subscribe/tablet@2x/chocolate-tab@2x.jpg);
     }
+}
+
+
+/*========== DESKTOP ==========*/
+
+@media screen and (min-width: 1200px) {
+
+    .subscribe-section {
+        padding: 72px 0;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(./img/subscribe/desktop@1x/chocolate-desk@1x.jpg);
+    }
+
+    .subscribe-button {
+        padding: 14px 40px;
+        width: 172px;
+        height: 50px;
+    }
+
+}
+
+@media screen and(min-device-pixel-ratio: 2) and (max-width: 1200px),
+screen and (min-resolution: 192dpi),
+screen and(min-resolution: 2dppx) {
+    .subscribe-section {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(./img/subscribe/desktop@2x/chocolate-desk@2x.jpg);
+    }
+
 }
