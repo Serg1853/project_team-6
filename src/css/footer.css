@@ -39,6 +39,7 @@ justify-content: space-between;
 }
 .footer-address-item{
     margin-bottom: 4px;
+    font-weight: 400;
 }
 .footer-address-list .footer-address-item:last-child{
     margin-bottom: 0; 
