@@ -1,0 +1,61 @@
+<div class="backdrop is-hidden" data-review-modal>
+  <div class="modal-leave-review">
+    <button class="modal-leave-review-close-btn" data-review-modal-close>
+      <svg class="modal-leave-review-close-btn-icon" width="14" height="14">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-leave-review-text">
+      LEAVE A REVIEW<br />
+      ABOUT
+      <span class="modal-leave-review-text-accent">OUR CHOCOLATE</span>
+    </p>
+    <form class="modal-leave-review-form">
+      <label class="modal-leave-review-form-filed">
+        <input
+          class="modal-leave-review-input"
+          type="text"
+          name="user_name"
+          required
+          pattern="^[a-zA-Za-яА-Я]+"
+          minlength="2"
+          placeholder="Name"
+        />
+      </label>
+      <label class="modal-leave-review-form-filed">
+        <input
+          class="modal-leave-review-input"
+          type="email"
+          name="user_mail"
+          required
+          placeholder="Email"
+        />
+      </label>
+      <label class="modal-leave-review-form-filed">
+        <span class="modal-leave-review-input-wrapper">
+          <input
+            class="modal-leave-review-input leave-review-input-tel"
+            type="tel"
+            name="user_phone"
+            required
+            title="xx-xxx-xx-xx"
+            placeholder="Phone number"
+          />
+          <svg class="leave-review-input-tel-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-ukreine"></use>
+          </svg>
+          <span class="leave-review-input-tel-text">+380</span>
+        </span>
+      </label>
+      <label class="modal-leave-review-form-filed-message">
+        <textarea
+          class="modal-leave-review-form-message"
+          name="user_message"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+      <button class="modal-leave-review-form-sumbit" type="submit">Send</button>
+    </form>
+  </div>
+  <script src="src/main.js"></script>
+</div>
