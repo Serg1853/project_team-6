@@ -2,7 +2,6 @@
   padding-top: 20px;
   padding-bottom: 14px;
 }
-
 .container {
   width: 100%;
   /* outline: 1px solid tomato; */
@@ -93,9 +92,7 @@
   fill: #fd9222;
 }
 .header-mobile-menu-list {
-  /* position: absolute;
-  top: 136px;
-  left: 50px; */
+ 
   padding-top: 136px;
   padding-right: 46px;
   padding-left: 50px;
@@ -138,10 +135,7 @@
   .header-mobile-menu {
     width: 290px;
   }
-  /* .mobile-menu-close-btn {
-    width: 40px;
-    height: 40px;
-  } */
+
 }
 .header-mobile-menu-list-social {
   position: absolute;
@@ -169,6 +163,7 @@
     height: 24px;
   }
 }
+/* desktop */
 @media screen and (min-width: 1200px) {
   .header-logo {
     font-size: 18px;
