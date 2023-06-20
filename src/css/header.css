@@ -49,7 +49,7 @@
 
 /* mobile menu */
 .header-mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   display: flex;
@@ -64,6 +64,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 10;
 }
 
 .header-mobile-menu.is-open {
@@ -92,7 +93,6 @@
   fill: #fd9222;
 }
 .header-mobile-menu-list {
- 
   padding-top: 136px;
   padding-right: 46px;
   padding-left: 50px;
@@ -135,7 +135,6 @@
   .header-mobile-menu {
     width: 290px;
   }
-
 }
 .header-mobile-menu-list-social {
   position: absolute;
