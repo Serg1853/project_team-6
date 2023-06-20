@@ -1,5 +1,9 @@
 /*========== How it's made? =========*/
 
+.how-its-made-list {
+  list-style-type: disc;
+}
+
 .how-its-made {
   padding-bottom: 72px;
 }
@@ -57,6 +61,7 @@
 .how-its-made-img-wrapper {
   position: relative;
   margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 768px) {
