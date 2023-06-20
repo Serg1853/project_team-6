@@ -1,4 +1,11 @@
-   .our-products-title {
+
+@media screen and (min-width: 375px) {
+    .container {
+      width: 375px;
+    }
+  }
+  .our-products-title {
+
     font-weight: 600;
     font-size: 24px;
     line-height: 1.16;
@@ -77,6 +84,14 @@
     }
   }
   @media screen and (min-width: 768px) {
+
+
+    .container {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
     .our-products-list{
         display: flex; 
         justify-content: center;
@@ -92,7 +107,11 @@
         padding-bottom: 100px;
     }
   }
-  @media screen and (min-width: 1200px){
+
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
     .our-products-section{
         padding-bottom: 128px;
     }
@@ -102,4 +121,6 @@
     .our-products-card{
         width: calc((100% - 54px) / 4);
     }
+
 } 
+ 
