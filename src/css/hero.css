@@ -1,20 +1,21 @@
-/* :root {
-    --color1: #fff;
-    --color2: #fd9222;
-
-} */
-
-
 .section-hero {
     padding-bottom: 72px;
 }
 
 .hero-picture {
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+
+
     background-color: #FCF1E0;
     border-radius: 30px;
 
     padding-top: 395px;
     padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0 auto;
 
 
@@ -22,6 +23,12 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+}
+@media screen and (min-width:375px) {
+    .hero-picture {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 375px),
@@ -39,6 +46,9 @@ screen and (min-resolution: 2dppx) and (min-width: 375px) {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/tablet/chocolate-covered-cocoa-powder.jpg);
         padding-top: 670px;
         padding-bottom: 40px;
+        padding-left: 40px;
+    padding-right: 40px;
+        
     }
 }
 
@@ -55,6 +65,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/tablet/chocolate-covered-cocoa-powder.jpg);
         padding-top: 380px;
+        
 
     }
 }
@@ -68,26 +79,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 
-.container-section-hero {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: flex-start;
-    align-items: flex-start; */
-    gap: 32px;
-    margin: 0 10px;
-}
 
-@media screen and (min-width: 375px) {
-    .container-section-hero {
-        margin: 0 20px;
-    }
-}
 
-@media screen and (min-width: 768px) {
-    .container-section-hero {
-        margin: 0 40px;
-    }
-}
+
 
 .hero-text {
     font-weight: 500;
@@ -134,14 +128,14 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     }
 }
 
-.hero-container-two-btn {}
-
-.hero-btn {
+.hero-container-two-btn {
     display: flex;
     gap: 14px;
 }
 
-.list-btn-hero {}
+
+
+
 
 
 .modal-btn-buy {
@@ -185,7 +179,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 
-.modal-btn-two {
+.modal-link-two {
 
     min-width: 100px;
 
@@ -193,38 +187,38 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     border: 1px solid #FFFFFF;
     border-radius: 100px;
 
-    font-family: 'Montserrat', sans-serif;
+   
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    letter-spacing: 0.04em;
+    
     color: #FFFFFF;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     display: block;
     background-color: transparent;
-
+    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 @media screen and (min-width: 375px) {
-    .modal-btn-two {
+    .modal-link-two {
         min-width: 159px;
         padding: 12px 28px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .modal-btn-two {
+    .modal-link-two {
         min-width: 183px;
         padding: 14px 40px;
     }
 }
 
-.modal-btn-two:hover,
-.modal-btn-two:focus {
+.modal-link-two:hover,
+.modal-link-two:focus {
     color: rgba(253, 146, 34, 1);
     border: 1px solid rgba(253, 146, 34, 1);
 }
@@ -233,7 +227,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .modal-btn-three {
     max-width: 120px;
     border: none;
-    font-family: 'Montserrat', sans-serif;
+    
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -272,11 +266,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero-icon-tablet {
         display: none;
     }
+    .hero-icon-mobile {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .hero-icon-mobile {
         display: none;
+    }
+    .hero-icon-tablet {
+        display: block;
     }
 }
 
