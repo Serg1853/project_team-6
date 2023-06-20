@@ -1,0 +1,118 @@
+@media screen and (min-width: 375px) {
+    .container {
+      width: 375px;
+    }
+  }
+  .our-products-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+    margin-bottom: 32px;
+  }
+  .our-products-title-part-two {
+    color: var(--accent-color);
+  }
+  .our-products-list{
+    list-style: none;
+  }
+  .our-products-card {
+    background: #ffffff;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+  }
+  .our-products-imag {
+    padding-top: 32px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .our-products-description {
+    padding-top: 8px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+  .our-products-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--text-color-theme-light);
+    margin-bottom: 2px;
+  }
+  .our-products-type {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+    margin-bottom: 18px;
+  }
+  .our-products-button {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--text-color-theme-light);
+    min-width: 55px;
+    min-height: 17px;
+    padding: 8px 19px 8px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fafafa;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .our-products-button:hover,
+  .our-products-button:focus {
+    color: var(--text-color-theme-dark);
+    background-color: var(--accent-color);
+  }
+  @media screen and (max-width: 767px){
+    .our-products-section{
+        padding-bottom: 82px;
+    }
+    .our-products-card-tablet,.our-products-card-dextop{
+        display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .our-products-list{
+        display: flex; 
+        justify-content: center;
+        gap: 18px; 
+    }
+    .our-products-card{
+        width: calc((100% - 18px) / 2);
+    }
+    .our-products-card-dextop{
+        display: none;
+    }
+    .our-products-section{
+        padding-bottom: 100px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+    .our-products-section{
+        padding-bottom: 128px;
+    }
+    .our-products-card-dextop{
+        display: block;
+    }
+    .our-products-card{
+        width: calc((100% - 54px) / 4);
+    }
+  }

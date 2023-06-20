@@ -11,6 +11,7 @@
   .container {
     width: 375px;
   }
+  
 }
 .unique-components-head-text {
   margin-left: auto;
@@ -41,10 +42,11 @@
   gap: 20px;
 }
 .unique-components-block {
-  width: 335px;
-  height: 270px;
+  width: 280px;
+  height: 290px;
   border-radius: 15px;
 }
+
 .orange-back {
   background: var(--accent-color);
 }
@@ -59,7 +61,7 @@
   padding: 28px 56px 0 56px;
 }
 .unique-components-text-under-img {
-  padding: 25px 0px 0px 28px;
+  padding: 50px 0px 28px 28px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -72,17 +74,23 @@
 .dark-text {
   color: var(--text-color-theme-light);
 }
+@media screen and (min-width: 375px){
+.unique-components-block{
+width: 335px;
+height: 270px;
+  }
+  .unique-components-text-under-img{
+    padding: 25px 0px 28px 28px
+  }
+}
 /* overlay */
 .card {
   position: relative;
-  width: 335px;
-  height: 270px;
   color: white;
 }
 .unique-components-block {
   z-index: 1;
   position: relative;
-  height: 100%;
   backface-visibility: hidden;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
