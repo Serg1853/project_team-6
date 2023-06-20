@@ -79,6 +79,9 @@ ul {
     display: flex;
   }
 }
+.reviews-block {
+  gap: 28px;
+}
 .reviews-section {
     padding-bottom: 72px;
     text-align: center;
