@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.wallpaper {
+.subscribe_wallpaper {
     background-image: url(./img/chocolate.jpg);
     background-position: center;
     background-size: cover;
@@ -13,8 +13,8 @@
 
 }
 
-.button_1,
-.button-large {
+.subscribe_button_1,
+.subscribe_button-large {
     border: 0;
     display: flex;
     flex-direction: row;
@@ -27,17 +27,17 @@
     border-radius: 100px;
 }
 
-.button_1:hover,
-.button_1:focus {
+.subscribe_button_1:hover,
+.subscribe_button_1:focus {
     background-color: #FCF1E0;
 }
 
-.button_1:hover .text_1,
-.button_1:focus .text_1 {
+.subscribe_button_1:hover .subscribe_text_1,
+.subscribe_button_1:focus .subscribe_text_1 {
     color: #FD9222;
 }
 
-.text_1 {
+.subscribe_text_1 {
     font-family: 'Montserrat', sans-serif;
     width: 72px;
     height: 17px;
@@ -48,7 +48,7 @@
     color: #FFFFFF;
 }
 
-.description {
+.subscribe_description {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -59,11 +59,11 @@
     padding: 0 12px;
 }
 
-.title {
-    color: white;
+.subscribe_title {
     font-family: 'Montserrat', sans-serif;
     width: 291px;
     height: 48px;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -76,7 +76,7 @@
 
 /* Tablet  */
 @media screen and (min-width:375px) and (max-width:768px) {
-    .title {
+    .subscribe_title {
         font-family: 'Montserrat', sans-serif;
         width: 378px;
         height: 56px;
@@ -90,10 +90,10 @@
         color: #FFFFFF;
     }
 
-    .description {
+    .subscribe_description {
         font-family: 'Montserrat', sans-serif;
-        width: 467px;
-        height: 72px;
+        width: 326px;
+        height: 108px;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -102,34 +102,33 @@
         letter-spacing: -0.02em;
         color: #FFFFFF;
     }
-
-    .button_1 {
+    .subscribe_button_1 {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding: 14px 40px;
+        padding: 12px 28px;
         gap: 14px;
-        width: 172px;
-        height: 50px;
+        width: 128px;
+        height: 41px;
         background: #FD9222;
         border-radius: 100px;
     }
 
-    .text_1 {
+    .subscribe_text_1 {
         font-family: 'Montserrat', sans-serif;
-        width: 92px;
-        height: 22px;
+        width: 72px;
+        height: 17px;
         font-style: normal;
         font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 17px;
         color: #FFFFFF;
     }
 }
 
 /* Desktop  */
 @media screen and (min-width:768px) and (max-width:1200px) {
-    .title {
+    .subscribe_title {
         font-family: 'Montserrat', sans-serif;
         width: 378px;
         height: 56px;
@@ -143,7 +142,7 @@
         color: #FFFFFF;
     }
 
-    .description {
+    .subscribe_description {
         font-family: 'Montserrat', sans-serif;
         width: 467px;
         height: 72px;
@@ -156,7 +155,7 @@
         color: #FFFFFF;
     }
 
-    .button_1 {
+    .subscribe_button_1 {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -168,7 +167,7 @@
         border-radius: 100px;
     }
 
-    .text_1 {
+    .subscribe_text_1 {
         font-family: 'Montserrat', sans-serif;
         width: 92px;
         height: 22px;
