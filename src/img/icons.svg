@@ -42,9 +42,9 @@
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.9143" d="M31.543 16c0 8.584-6.959 15.543-15.543 15.543s-15.543-6.959-15.543-15.543c0-8.584 6.959-15.543 15.543-15.543s15.543 6.959 15.543 15.543z"></path>
 </symbol>
 
-        <symbol id="icon-ukreine" viewBox="0 0 31 32">
-<path fill="#ffd700" style="fill: var(--color1, #ffd700)" d="M30.559 5.496h-30.326v22.568h30.326v-22.568z"></path>
-<path fill="#0057b7" style="fill: var(--color2, #0057b7)" d="M0.233 5.496h30.326v11.284h-30.326v-11.284z"></path>
+       <symbol id="icon-ukreine" viewBox="0 0 31 32">
+<path fill="#ffd700" style="fill: var(--color5, #ffd700)" d="M30.559 5.496h-30.326v22.568h30.326v-22.568z"></path>
+<path fill="#0057b7" style="fill: var(--color6, #0057b7)" d="M0.233 5.496h30.326v11.284h-30.326v-11.284z"></path>
 </symbol>
 <symbol id="icon-mastercard" viewBox="0 0 49 32">
 <path fill="#fafafa" style="fill: var(--color1, #fafafa)" d="M6.095 0.762h36.571c2.946 0 5.333 2.388 5.333 5.333v19.81c0 2.946-2.388 5.333-5.333 5.333h-36.571c-2.946 0-5.333-2.388-5.333-5.333v-19.81c0-2.946 2.388-5.333 5.333-5.333z"></path>
@@ -59,3 +59,5 @@
 </symbol> 
 </defs>
 </svg>
+
+
