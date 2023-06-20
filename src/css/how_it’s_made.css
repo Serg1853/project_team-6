@@ -1,14 +1,14 @@
 /*========== How it's made? =========*/
 
 .how-its-made {
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 .accent-title {
   color: var(--accent-color);
 }
 
-.title {
+.made-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -61,7 +61,7 @@
 
 @media screen and (min-width: 768px) {
   .how-its-made {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .title {
@@ -95,7 +95,7 @@
 
 @media screen and (min-width: 1200px) {
   .how-its-made {
-    margin-bottom: 128px;
+    padding-bottom: 128px;
   }
 
   .how-its-made-list .how-its-made-list-item:not(:last-child) {
@@ -114,6 +114,7 @@
 }
 
 .how-its-made-btn {
+  color: var(--color1);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -126,6 +127,6 @@
   transform: translate(-50%, -50%);
 }
 
-/* .how-its-made-icon {
+.how-its-made-icon {
   fill: #f5f4f4;
-} */
+}
