@@ -18,10 +18,12 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 9;
+  overflow-y: auto; 
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .is-hidden {
   opacity: 0;
@@ -29,35 +31,40 @@
   pointer-events: none;
 }
 
+
+
 .modal-buy {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 311px;
   min-height: 994px;
-  background: #fafafa;
+  background: #FAFAFA;
   border-radius: 15px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 30px 10px;
+
 }
 
 @media screen and (min-width: 375px) {
   .modal-buy {
-    padding: 32px 24px;
+      padding: 32px 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .modal-buy {
-    min-width: 609px;
-    min-height: 1058px;
-    padding: 48px 48px;
+      min-width: 609px;
+      min-height: 1058px;
+      padding: 48px 48px;
+
   }
 }
+
 
 .modal-close-btn-buy {
   position: absolute;
@@ -79,16 +86,16 @@
 
 @media screen and (min-width: 768px) {
   .modal-close-btn-buy {
-    top: 24px;
-    right: 24px;
-    width: 28px;
-    height: 28px;
+      top: 24px;
+      right: 24px;
+      width: 28px;
+      height: 28px;
   }
 }
 
 .modal-close-btn-buy:hover,
 .modal-close-btn-buy:focus {
-  background: #fcf1e0;
+  background: #FCF1E0;
 }
 
 .modal-close-icon-buy {
@@ -101,25 +108,29 @@
   fill: rgba(241, 101, 41, 1);
 }
 
+
 .title-buy {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #fd9222;
+  color: #FD9222;
 }
 
 @media screen and (min-width: 768px) {
   .title-buy {
-    font-size: 24px;
-    line-height: 1.17;
+      font-size: 24px;
+      line-height: 1.17;
   }
 }
+
 
 .title-buy-two {
   color: rgba(17, 17, 17, 1);
 }
+
+
 
 .picture-list-buy {
   display: flex;
@@ -131,10 +142,11 @@
 
 @media screen and (min-width: 768px) {
   .picture-list-buy {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    margin: 48px 48px;
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      margin: 48px 48px;
+
   }
 }
 
@@ -145,7 +157,7 @@
   min-width: 243px;
 
   padding: 8px 16px;
-  background: #ffffff;
+  background: #FFFFFF;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 
@@ -155,24 +167,23 @@
 
 @media screen and (min-width: 375px) {
   .picture-item-buy {
-    gap: 70px;
-    min-width: 263px;
+      gap: 70px;
+      min-width: 263px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .picture-item-buy {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    min-width: 160px;
-    padding-top: 24px;
-    padding-right: 20px;
-    padding-bottom: 18px;
-    padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-width: 160px;
+      padding-top: 24px;
+      padding-right: 20px;
+      padding-bottom: 18px;
+      padding-left: 20px;
   }
 }
-
 .curent {
   display: block;
 }
@@ -183,19 +194,20 @@
 
 @media screen and (min-width: 768px) {
   .curent {
-    display: none;
+      display: none;
   }
 
   .curent-two {
-    display: block;
+      display: block;
   }
 }
+
 
 .buy-btn-shop {
   min-width: 73px;
 
   padding: 6px 16px;
-  background: #fafafa;
+  background: #FAFAFA;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   font-weight: 600;
@@ -211,17 +223,17 @@
 
 @media screen and (min-width: 768px) {
   .buy-btn-shop {
-    min-width: 96px;
+      min-width: 96px;
 
-    padding: 8px 27px;
+      padding: 8px 27px;
   }
 }
 
 .buy-btn-shop:hover,
 .buy-btn-shop:focus {
   color: rgba(253, 146, 34, 1);
-  background: #fcf1e0;
-  border: #fcf1e0;
+  background: #FCF1E0;
+  border: #FCF1E0;
 }
 
 .contact-form-two-input {
@@ -242,12 +254,15 @@
   margin-bottom: 8px;
 }
 
+
 @media screen and (min-width: 768px) {
-  .contact-form-wrapper-buynow {
-    font-size: 14px;
-    line-height: 1.28;
+  .contact-form-wrapper-buynow  {
+      font-size: 14px;
+  line-height: 1.28;
   }
 }
+
+
 
 .container-two-input {
   display: flex;
@@ -256,9 +271,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container-two-input {
-    flex-direction: row;
-    gap: 21px;
+  .container-two-input  {
+      flex-direction: row;
+      gap: 21px;
   }
 }
 
@@ -272,6 +287,7 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 
+  
   width: 100%;
   height: 45px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -282,31 +298,33 @@
   padding-left: 18px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 @media screen and (min-width: 768px) {
-  .contact-form-input-buynow-two:focus {
-    border-color: #fd9222;
-  }
+  .contact-form-input-buynow-two:focus{
+      border-color: #FD9222;
+      }
 }
 
-.contact-form-input-buynow-two:focus {
-  border-color: #fd9222;
+.contact-form-input-buynow-two:focus{
+border-color: #FD9222;
 }
 
-.form-input-buynow-two {
+
+.form-input-buynow-two{
   padding-left: 92px;
 }
 
 @media screen and (min-width: 768px) {
-  .contact-form-input-buynow-two {
-    height: 66px;
+  .contact-form-input-buynow-two  {
+      height: 66px;
   }
-  .form-input-buynow-two {
-    padding-left: 149px;
+  .form-input-buynow-two{
+      padding-left: 149px;
   }
 }
-.input-block {
+.input-block{
   position: relative;
 }
 
@@ -321,109 +339,114 @@
   gap: 8px;
 }
 @media screen and (min-width: 768px) {
-  .container-number {
-    gap: 18px;
-    left: 24px;
+  .container-number  {
+      gap: 18px;
+      left: 24px;
   }
 }
+
 .number-ukreine {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.21;
-  letter-spacing: -0.02em;
+font-size: 14px;
+line-height: 1.21;
+letter-spacing: -0.02em;
 
-  color: #000000;
+color: #000000;
 }
 
 @media screen and (min-width: 768px) {
-  .number-ukreine {
-    font-size: 18px;
+  .number-ukreine  {
+      font-size: 18px;
   }
 }
 
-.position-icon {
+.position-icon{
   position: absolute;
   top: 50%;
   right: 14px;
   transform: translateY(-50%);
 }
-.icon-media {
+.icon-media{
   display: block;
 }
-.icon-media-two {
+.icon-media-two{
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .icon-media {
-    display: none;
+  .icon-media{
+      display: none;
   }
-  .icon-media-two {
-    display: block;
+  .icon-media-two{
+      display: block;
   }
 }
 
-.contact-form-message-buy {
+.contact-form-message-buy{
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.21;
-  color: rgba(64, 64, 64, 0.3);
-
+font-size: 14px;
+line-height: 1.21;
+color: rgba(64, 64, 64, 0.3);
+  
+  
   width: 100%;
   height: 91px;
   resize: none;
   background-color: transparent;
   outline: transparent;
   resize: none;
-  border: 1.5px solid rgba(64, 64, 64, 0.3);
+  border: 1.5px solid  rgba(64, 64, 64, 0.3);
   border-radius: 8px;
   padding: 14px 18px;
-
+  
+  
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
-  .contact-form-message-buy {
-    font-size: 18px;
-    line-height: 1.33;
-    padding: 22px 24px;
+  .contact-form-message-buy{
+      font-size: 18px;
+line-height: 1.33;
+      padding: 22px 24px;
   }
 
-  .contact-form-message-buy:focus {
-    border-color: #fd9222;
+  .contact-form-message-buy:focus{
+      border-color: #FD9222;
   }
 }
 
-.contact-form-submit-buy {
+
+.contact-form-submit-buy{
   min-width: 109px;
 
   padding: 12px 28px;
-  background: #fd9222;
+  background: #FD9222;;
   border: 1px solid #e8871f;
   border-radius: 100px;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  color: #ffffff;
+font-size: 14px;
+line-height: 1.21;
+color: #FFFFFF;
 
   box-shadow: 0.3px 0.3px 0.3px 0.3px rgba(0, 0, 0, 0.15);
   display: block;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-submit-buy:hover,
-.contact-form-submit-buy:focus {
-  color: #fd9222;
-  background: #fcf1e0;
+.contact-form-submit-buy:focus{
+  color: #FD9222;
+  background: #FCF1E0;
 }
 
 @media screen and (min-width: 768px) {
-  .contact-form-submit-buy {
-    min-width: 133px;
-    padding: 14px 40px;
+  .contact-form-submit-buy{
+      min-width: 133px;
+  padding: 14px 40px;
   }
 }
+
+
 
 /* модальне вікно   close */
