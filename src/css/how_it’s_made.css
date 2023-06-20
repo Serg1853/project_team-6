@@ -119,6 +119,9 @@
 }
 
 .how-its-made-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color1);
   position: absolute;
   top: 50%;
