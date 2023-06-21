@@ -79,7 +79,7 @@
   color: var(--subscribe-accent-btn-color);
 }
 
-/*========== MEDIA ==========*/
+/* ==========MEDIA========== */
 
 /*========== MOBILE ==========*/
 
@@ -108,7 +108,7 @@
 
 @media screen and(min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+  screen and(min-resolution: 2dppx) {
   .subscribe-section {
     background-image: linear-gradient(
         0deg,
@@ -144,7 +144,7 @@
 
 @media screen and(min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+  screen and(min-resolution: 2dppx) {
   .subscribe-section {
     background-image: linear-gradient(
         0deg,
@@ -179,7 +179,7 @@
 
 @media screen and(min-device-pixel-ratio: 2) and (max-width: 1200px),
   screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+  screen and(min-resolution: 2dppx) {
   .subscribe-section {
     background-image: linear-gradient(
         0deg,
