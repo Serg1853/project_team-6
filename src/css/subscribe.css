@@ -78,3 +78,101 @@
 .subscribe-button:focus .subscribe-btn-text {
     color: var(--subscribe-accent-btn-color);
 }
+
+
+
+/* ==========MEDIA========== */
+
+/*========== MOBILE ==========*/
+
+@media screen and (max-width: 767px) {
+
+    .subscribe-section {
+        padding: 62px 0;
+
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(../img/subscribe/mobile@1x/chocolate-mb@1x.jpg);
+    }
+
+    .subscribe-text {
+        max-width: 320px;
+        height: 108px;
+    }
+
+    .subscribe-btn-text {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 375px),
+screen and (min-resolution: 192dpi),
+screen and(min-resolution: 2dppx) {
+
+    .subscribe-section {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(../img/subscribe/mobile@2x/chocolate-mb@2x.jpg);
+    }
+
+}
+
+
+/*========== TABLET ==========*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .subscribe-section {
+        padding: 72px 0;
+
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(../img/subscribe/tablet@1x/chocolate-tab@1x.jpg);
+    }
+
+    .subscribe-button {
+        padding: 14px 40px;
+        width: 172px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi),
+screen and(min-resolution: 2dppx) {
+
+    .subscribe-section {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(../img/subscribe/tablet@2x/chocolate-tab@2x.jpg);
+    }
+
+}
+
+/*========== DESKTOP ==========*/
+
+@media screen and (min-width: 1200px) {
+
+    .subscribe-section {
+        padding: 72px 0;
+
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(../img/subscribe/desktop@1x/chocolate-desk@1x.jpg);
+    }
+
+    .subscribe-button {
+        padding: 14px 40px;
+        width: 172px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi),
+screen and(min-resolution: 2dppx) {
+
+    .subscribe-section {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(../img/subscribe/desktop@2x/chocolate-desk@2x.jpg);
+    }
+
+}
