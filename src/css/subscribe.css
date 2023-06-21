@@ -5,6 +5,20 @@
   --subscribe-accent-btn-focus-color: #fcf1e0;
 }
 
+.subscribe-section {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(./img/subscribe/mobile@1x/chocolate-mb@1x.jpg);
+}
+
 .subscribe-container {
   display: flex;
   flex-direction: column;
@@ -65,6 +79,46 @@
   color: var(--subscribe-accent-btn-color);
 }
 
+/* ==========MEDIA========== */
+
+/*========== MOBILE ==========*/
+
+@media screen and (max-width: 767px) {
+  .subscribe-section {
+    padding: 62px 0;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(./img/subscribe/mobile@1x/chocolate-mb@1x.jpg);
+  }
+
+  .subscribe-text {
+    width: 100%;
+    height: 108px;
+  }
+
+  .subscribe-btn-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and(min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi),
+  screen and(min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(./img/subscribe/mobile@2x/chocolate-mb@2x.jpg);
+  }
+}
+
 /*========== TABLET ==========*/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -72,24 +126,13 @@
     padding: 72px 0;
     background-position: center;
     background-size: cover;
-}
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi),
-screen and(min-resolution: 2dppx) {
-
-    .subscribe-section {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(../img/subscribe/tablet@2x/chocolate-tab@2x.jpg);
-    }
-
-=======
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/subscribe/tablet@1x/chocolate-tab@1x.jpg);
+      url(./img/subscribe/tablet@1x/chocolate-tab@1x.jpg);
   }
 
   .subscribe-button {
@@ -99,27 +142,50 @@ screen and(min-resolution: 2dppx) {
   }
 }
 
-
+@media screen and(min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi),
+  screen and(min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(./img/subscribe/tablet@2x/chocolate-tab@2x.jpg);
+  }
+}
 
 /*========== DESKTOP ==========*/
 
 @media screen and (min-width: 1200px) {
+  .subscribe-section {
+    padding: 72px 0;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(./img/subscribe/desktop@1x/chocolate-desk@1x.jpg);
+  }
 
-    .subscribe-section {
-        padding: 72px 0;
-        height: 372px;
-
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(../img/subscribe/desktop@1x/chocolate-desk@1x.jpg);
-    }
-
-    .subscribe-button {
-        padding: 14px 40px;
-        width: 172px;
-        height: 50px;
-    }
-
-
+  .subscribe-button {
+    padding: 14px 40px;
+    width: 172px;
+    height: 50px;
+  }
 }
 
-
+@media screen and(min-device-pixel-ratio: 2) and (max-width: 1200px),
+  screen and (min-resolution: 192dpi),
+  screen and(min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(./img/subscribe/desktop@2x/chocolate-desk@2x.jpg);
+  }
+}
