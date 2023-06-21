@@ -78,7 +78,11 @@ ul {
     padding-left: 18px;
     padding-right: 18px;
   }
-  
+  @media screen and (min-width: 1200px) {
+    .reviews-thumb {
+     width: 360px;
+    }
+  }
   .reviews-name {
     margin-bottom: 24px;
   
