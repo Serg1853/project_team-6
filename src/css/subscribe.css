@@ -16,7 +16,7 @@
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(./img/subscribe/mobile@1x/chocolate-mb@1x.jpg);
+    url(../img/subscribe/mobile@1x/chocolate-mb@1x.jpg);
 }
 
 .subscribe-container {
@@ -93,7 +93,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(./img/subscribe/mobile@1x/chocolate-mb@1x.jpg);
+      url(../img/subscribe/mobile@1x/chocolate-mb@1x.jpg);
   }
 
   .subscribe-text {
@@ -115,7 +115,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(./img/subscribe/mobile@2x/chocolate-mb@2x.jpg);
+      url(../img/subscribe/mobile@2x/chocolate-mb@2x.jpg);
   }
 }
 
@@ -132,7 +132,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(./img/subscribe/tablet@1x/chocolate-tab@1x.jpg);
+      url(../img/subscribe/tablet@1x/chocolate-tab@1x.jpg);
   }
 
   .subscribe-button {
@@ -151,7 +151,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(./img/subscribe/tablet@2x/chocolate-tab@2x.jpg);
+      url(../img/subscribe/tablet@2x/chocolate-tab@2x.jpg);
   }
 }
 
@@ -167,7 +167,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(./img/subscribe/desktop@1x/chocolate-desk@1x.jpg);
+      url(../img/subscribe/desktop@1x/chocolate-desk@1x.jpg);
   }
 
   .subscribe-button {
@@ -186,6 +186,6 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(./img/subscribe/desktop@2x/chocolate-desk@2x.jpg);
+      url(../img/subscribe/desktop@2x/chocolate-desk@2x.jpg);
   }
 }
