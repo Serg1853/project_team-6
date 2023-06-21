@@ -71,14 +71,16 @@ ul {
   }
   
   .reviews-thumb {
-    height: 200px;
-  
     padding-top: 56px;
     padding-bottom: 42px;
     padding-left: 18px;
     padding-right: 18px;
   }
-  
+  @media screen and (min-width: 1200px) {
+    .reviews-thumb {
+     width: 360px;
+    }
+  }
   .reviews-name {
     margin-bottom: 24px;
   
