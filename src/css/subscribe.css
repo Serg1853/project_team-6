@@ -5,7 +5,6 @@
     --subscribe-accent-btn-focus-color: #FCF1E0;
 }
 
-
 .subscribe-section {
     margin: 0 auto;
     max-width: 1200px;
@@ -79,8 +78,6 @@
     color: var(--subscribe-accent-btn-color);
 }
 
-
-
 /* ==========MEDIA========== */
 
 /*========== MOBILE ==========*/
@@ -115,7 +112,6 @@ screen and(min-resolution: 2dppx) {
     }
 
 }
-
 
 /*========== TABLET ==========*/
 
