@@ -22,6 +22,7 @@
   }
   .our-products-imag {
     padding: 32px 20px 0 20px;
+    width: 335px;
   }
   .our-products-description {
     margin-top: 8px;
@@ -84,6 +85,9 @@
     }
     .our-products-card{
         width: calc((100% - 18px) / 2);
+    }
+    .our-products-imag {
+      width: 270px;
     }
     .our-products-card-dextop{
         display: none;
