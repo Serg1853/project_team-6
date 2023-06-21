@@ -79,6 +79,7 @@ margin-top: 32px;
 .footer-address-link{
     color: #ffffff;
     text-decoration: none;
+    /* white link */
 }
 /* //////////////////////////FOOTER mobile:375px /////////////////////////*/
 @media screen and (min-width: 375px){
