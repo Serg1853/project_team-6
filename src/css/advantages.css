@@ -91,7 +91,7 @@
     }
 
     .advantages-item {
-        width: 308px;
+        max-width: 308px;
         height: 244px;
     }
 }
