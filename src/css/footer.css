@@ -54,7 +54,7 @@ display: block;
     display: flex;
 }
 .footer-social-item{
-   margin-right: 14px;
+    margin-right: 14px;
 }
 .footer-social-list .footer-social-item:last-child{
     margin-right: 0; 
@@ -98,7 +98,6 @@ margin-top: 32px;
         display: block;
         padding: 50px 32px;
     } 
-   
     .footer-band{
         display: flex;
     }
