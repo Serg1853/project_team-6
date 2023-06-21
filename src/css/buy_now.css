@@ -323,6 +323,8 @@ border-color: #FD9222;
 
 @media screen and (min-width: 768px) {
     .contact-form-input-buynow-two  {
+        font-size: 18px;
+line-height: 1.22;
         height: 66px;
     }
     .form-input-buynow-two{
