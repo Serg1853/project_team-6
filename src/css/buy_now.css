@@ -189,6 +189,7 @@
 
 @media screen and (min-width: 768px) {
     .buy-img{
+        height: 107px;
         width: 120px;
     }
 }
