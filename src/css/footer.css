@@ -70,8 +70,15 @@ margin-top: 32px;
 }
 .footer-menu-link{
     font-weight: 500;
+}
 
-
+.footer-menu-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-address-link{
+    color: #ffffff;
+    text-decoration: none;
 }
 /* //////////////////////////FOOTER mobile:375px /////////////////////////*/
 @media screen and (min-width: 375px){
