@@ -1,5 +1,9 @@
 /*========== How it's made? =========*/
 
+.how-its-made-list {
+  list-style-type: disc;
+}
+
 .how-its-made {
   padding-bottom: 72px;
 }
@@ -22,6 +26,8 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 1.33;
+  max-width: 307px;
+  margin-bottom: 20px;
 }
 
 .how-its-made-list-item {
@@ -36,10 +42,6 @@
   .how-its-made-list-item {
     font-size: 14px;
   }
-}
-
-.how-its-made-list-topic-wrapper {
-  margin-bottom: 20px;
 }
 
 .how-its-made-list-wrapper {
@@ -57,6 +59,7 @@
 .how-its-made-img-wrapper {
   position: relative;
   margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -77,6 +80,7 @@
 
   .how-its-made-list-topic {
     margin-bottom: 28px;
+    max-width: 350px;
   }
 
   .how-its-made-btn {
@@ -86,10 +90,6 @@
 
   .how-its-made-list-item {
     margin-right: 70px;
-  }
-
-  .how-its-made-list-topic-wrapper {
-    width: 350px;
   }
 }
 
@@ -114,6 +114,9 @@
 }
 
 .how-its-made-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color1);
   position: absolute;
   top: 50%;
