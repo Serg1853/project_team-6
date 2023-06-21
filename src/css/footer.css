@@ -115,6 +115,7 @@ margin-top: 32px;
     }
     .footer-menu-item{
         margin-bottom: 0;
+       
     }
     .footer-menu{
         margin-top: 24px;
@@ -134,22 +135,35 @@ margin-top: 32px;
     .footer-title{
         margin-bottom: 64px;
     }
-}
-.footer-menu-item:hover,
-.footer-menu-item:focus {
-color: #fd9222;
-}
-.footer-menu-link:hover,
-.footer-menu-link:focus{
+   /*  .footer-menu-item{
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    } */
+    .footer-menu-link{
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    } 
+    .footer-address-link{
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .footer-social-icons{
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .footer-menu-item:hover,
+    .footer-menu-item:focus {
     color: #fd9222;
+    }
+    .footer-menu-link:hover,
+    .footer-menu-link:focus{
+        color: #fd9222;
+    }
+    .footer-social-icons:hover,
+    .footer-social-icons:focus{
+        fill: #fd9222;}
+        .footer-address-link:hover,
+        .footer-address-link:focus{
+            color: #fd9222; 
+        }
 }
-.footer-social-icons:hover,
-.footer-social-icons:focus{
-    fill: #fd9222;}
-    .footer-address-link:hover,
-    .footer-address-link:focus{
-        color: #fd9222; 
-    }
-    .footer-social-link .footer-social-icons{
+
+   /*  .footer-social-link .footer-social-icons{
         fill: #ffffff;
-    }
+    } */
