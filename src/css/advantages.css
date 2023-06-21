@@ -57,11 +57,13 @@
     }
 
     .advantages-list {
+        flex-direction: column;
+        align-items: flex-start;
         gap: 20px;
     }
 
     .advantages-item {
-        width: 308px;
+        max-width: 308px;
         height: 244px;
     }
 
