@@ -1,55 +1,65 @@
+<div class="backdrop-explore is-hidden-explore" data-modal-explore>
+  <div class="explore-our">
+    <button
+      type="button"
+      class="modal-close-btn-explore"
+      data-modal-close-explore
+    >
+      <svg class="modal-close-icon-explore" width="12" height="12">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <picture>
+      <!-- MOBILE -->
+      <source
+        srcset="
+          ./img/explore_our/mobile/explore-our.jpg    1x,
+          ./img/explore_our/mobile/explore-our@2x.jpg 2x
+        "
+        media="(min-width: 280px)"
+      />
 
-    <div class="backdrop-explore is-hidden-explore" data-modal-explore>
-        <div class="explore-our">
-            <button type="button" class="modal-close-btn-explore" data-modal-close-explore>
-                <svg class="modal-close-icon-explore" width="12" height="12">
-                  <use href="../img/icons.svg#icon-close"></use>
-                </svg>
-              </button>
-              <picture>
+      <!-- TABLET -->
 
-                <!-- MOBILE -->
-                 <source
-                srcset="
-                  ./img/explore_our/mobile/explore-our.jpg    1x,
-                  ./img/explore_our/mobile/explore-our@2x.jpg 2x
-                "
-                media="(min-width: 280px)"
-              />
-
-              <!-- TABLET -->
-
-              <source
-                srcset="
-                  ./img/explore_our/tablet/explore-our.jpg    1x,
-                  ./img/explore_our/tablet/explore-our@2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-                <img 
-                class="img-explore"
-                src="./img/explore_our/mobile/explore-our.jpg" 
-                alt="chocolate"
-                width="100%">
-              </picture>
-             <div class="container-explore">
-              <h2 class="title-explore">EXPLORE OUR<br>
-                <span class="title-two-explore">NEW CHOCOLATE</span> FIRST!</h2>
-                <div class="container-input-explore">
-                    <label class="contact-form-wrapper-explore" for="user-email"></label>
-                      <div class="form-explore">
-                    <input
-                      class="contact-form-input-explore"
-                      type="email"
-                      name="user-email"
-                      id="user-email"
-                      placeholder="Enter your email"
-                      required
-                    />
-                    <button type="submit" class="contact-form-submit-explore curent-explore"> <span class="text-btn-expole-two">Submit</span> <span class="text-btn-expole">Subscribe</span></button>
-                    </div>
-                </div>
-            </div>
+      <source
+        srcset="
+          ./img/explore_our/tablet/explore-our.jpg    1x,
+          ./img/explore_our/tablet/explore-our@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        class="img-explore"
+        src="./img/explore_our/mobile/explore-our.jpg"
+        alt="chocolate"
+        width="100%"
+      />
+    </picture>
+    <div class="container-explore">
+      <h2 class="title-explore">
+        EXPLORE OUR<br />
+        <span class="title-two-explore">NEW CHOCOLATE</span> FIRST!
+      </h2>
+      <div class="container-input-explore">
+        <label class="contact-form-wrapper-explore" for="user-email"></label>
+        <div class="form-explore">
+          <input
+            class="contact-form-input-explore"
+            type="email"
+            name="user-email"
+            id="user-email"
+            placeholder="Enter your email"
+            required
+          />
+          <button
+            type="submit"
+            class="contact-form-submit-explore curent-explore"
+          >
+            <span class="text-btn-expole-two">Submit</span>
+            <span class="text-btn-expole">Subscribe</span>
+          </button>
         </div>
+      </div>
     </div>
- 
+  </div>
+</div>
