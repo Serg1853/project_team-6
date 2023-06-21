@@ -150,3 +150,6 @@ color: #fd9222;
     .footer-address-link:focus{
         color: #fd9222; 
     }
+    .footer-social-link .footer-social-icons{
+        fill: #ffffff;
+    }
