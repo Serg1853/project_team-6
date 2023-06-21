@@ -140,6 +140,14 @@ margin-top: 32px;
 .footer-menu-item:focus {
 color: #fd9222;
 }
+.footer-menu-link:hover,
+.footer-menu-link:focus{
+    color: #fd9222;
+}
 .footer-social-icons:hover,
 .footer-social-icons:focus{
     fill: #fd9222;}
+    .footer-address-link:hover,
+    .footer-address-link:focus{
+        color: #fd9222; 
+    }
