@@ -8,6 +8,7 @@
 .subscribe-section {
     margin: 0 auto;
     max-width: 1200px;
+    height: 370px;
 
     text-align: center;
     background-repeat: no-repeat;
@@ -149,6 +150,7 @@ screen and(min-resolution: 2dppx) {
 
     .subscribe-section {
         padding: 72px 0;
+        height: 372px;
 
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
             url(../img/subscribe/desktop@1x/chocolate-desk@1x.jpg);
