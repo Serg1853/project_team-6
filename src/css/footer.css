@@ -1,172 +1,171 @@
 /* ///////////////////////////// FOOTER from 320px ///////////////////////*/
 .footer {
-    background-color: #1e1823;
-    color: #ffffff;
+  background-color: #1e1823;
+  color: #ffffff;
 }
-.footer-container{
-    min-width: 320px;
-    padding: 32px 20px;
-    margin: 0 auto;
+.footer-container {
+  min-width: 320px;
+  padding: 32px 20px;
+  margin: 0 auto;
 }
-.footer-band{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.footer-band {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-title {
-    display: block;
-    width: 280px;
-    font-weight: 500;
-    font-size: 27px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-    margin-bottom: 32px;
+  display: block;
+  width: 280px;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 32px;
 }
-.footer-title-accent{
-    color: #FD9222;
+.footer-title-accent {
+  color: #fd9222;
 }
-.footer-wrapper{
-    display: flex;
-margin-bottom: 32px;
-justify-content: space-between;
+.footer-wrapper {
+  display: flex;
+  margin-bottom: 32px;
+  justify-content: space-between;
 }
-.footer-contact{
-    display: block;
-    width: 164px;
+.footer-contact {
+  display: block;
+  width: 164px;
 }
-.footer-contact-descr{
-    display: block;
-    margin-bottom: 14px;
+.footer-contact-descr {
+  display: block;
+  margin-bottom: 14px;
 }
-.footer-address-item{
-    margin-bottom: 4px;
-    font-weight: 400;
+.footer-address-item {
+  margin-bottom: 4px;
+  font-weight: 400;
 }
-.footer-address-list .footer-address-item:last-child{
-    margin-bottom: 0; 
+.footer-address-list .footer-address-item:last-child {
+  margin-bottom: 0;
 }
-.footer-social{
-display: block;
+.footer-social {
+  display: block;
 }
-.footer-social-icons{
-    fill: #ffffff;
+.footer-social-icons {
+  fill: #ffffff;
 }
-.footer-social-list{
-    display: flex;
+.footer-social-list {
+  display: flex;
 }
-.footer-social-item{
-    margin-right: 14px;
+.footer-social-item {
+  margin-right: 14px;
 }
-.footer-social-list .footer-social-item:last-child{
-    margin-right: 0; 
+.footer-social-list .footer-social-item:last-child {
+  margin-right: 0;
 }
-.footer-menu{
-margin-top: 32px;
+.footer-menu {
+  margin-top: 32px;
 }
-.footer-menu-item{
-    margin-bottom: 18px;
+.footer-menu-item {
+  margin-bottom: 18px;
 }
-.footer-menu-list .footer-menu-item:last-child{
-    margin-bottom: 0;
+.footer-menu-list .footer-menu-item:last-child {
+  margin-bottom: 0;
 }
-.footer-menu-link{
-    font-weight: 500;
+.footer-menu-link {
+  font-weight: 500;
 }
 
-.footer-menu-link{
-    color: #ffffff;
-    text-decoration: none;
+.footer-menu-link {
+  color: #ffffff;
+  text-decoration: none;
 }
-.footer-address-link{
-    color: #ffffff;
-    text-decoration: none;
-    /* white link */
+.footer-address-link {
+  color: #ffffff;
+  text-decoration: none;
+  /* white link */
 }
 /* //////////////////////////FOOTER mobile:375px /////////////////////////*/
-@media screen and (min-width: 375px){
-    .footer-container{
-        width: 375px; 
-        }
-    .footer-title{
-        width: 300px;
-        font-size: 28px;
-        }
+@media screen and (min-width: 375px) {
+  .footer-container {
+    width: 375px;
+  }
+  .footer-title {
+    width: 300px;
+    font-size: 28px;
+  }
 }
 /* //////////////////////////FOOTER tablet: 768px ///////////////////////////*/
-@media screen and (min-width: 768px){
-    .footer-container{
-        width: 768px;
-        display: block;
-        padding: 50px 32px;
-    } 
-    .footer-band{
-        display: flex;
-    }
-    .footer-title{
-        margin-right: 124px;
-        margin-bottom: 54px;
-    }
-    .footer-contact{
-        margin-right: 50px;
-    }
-    .footer-menu-list{
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
-    }
-    .footer-menu-item{
-        margin-bottom: 0;
-       
-    }
-    .footer-menu{
-        margin-top: 24px;
-    }
+@media screen and (min-width: 768px) {
+  .footer-container {
+    width: 768px;
+    display: block;
+    padding: 50px 32px;
+  }
+  .footer-band {
+    display: flex;
+  }
+  .footer-title {
+    margin-right: 124px;
+    margin-bottom: 54px;
+  }
+  .footer-contact {
+    margin-right: 50px;
+  }
+  .footer-menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-menu-item {
+    margin-bottom: 0;
+  }
+  .footer-menu {
+    margin-top: 24px;
+  }
 }
 /* //////////////////////////FOOTER desktop: 1200px///////////////////////////*/
-@media screen and (min-width: 1200px){
-    .footer-container{
-        width: 1200px;
-    }
-    .footer-band{
-        justify-content: space-between;
-    }
-    .footer-contact{
-        margin-right: 60px;
-    }
-    .footer-title{
-        margin-bottom: 64px;
-    }
-    .footer-menu-link{
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    } 
-    .footer-address-link{
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .footer-social-icons{
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .footer-menu-item:hover,
-    .footer-menu-item:focus {
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    width: 1200px;
+  }
+  .footer-band {
+    justify-content: space-between;
+  }
+  .footer-contact {
+    margin-right: 60px;
+  }
+  .footer-title {
+    margin-bottom: 64px;
+  }
+  .footer-menu-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-address-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-social-icons {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-menu-item:hover,
+  .footer-menu-item:focus {
     color: #fd9222;
-    }
-    .footer-menu-link:hover,
-    .footer-menu-link:focus{
-        color: #fd9222;
-    }
-    .footer-social-icons:hover,
-    .footer-social-icons:focus{
-        fill: #fd9222;}
-        .footer-address-link:hover,
-        .footer-address-link:focus{
-            color: #fd9222; 
-        }
+  }
+  .footer-menu-link:hover,
+  .footer-menu-link:focus {
+    color: #fd9222;
+  }
+  .footer-social-icons:hover,
+  .footer-social-icons:focus {
+    fill: #fd9222;
+  }
+  .footer-address-link:hover,
+  .footer-address-link:focus {
+    color: #fd9222;
+  }
 }
-<<<<<<< Updated upstream
-=======
+
 .footer-menu-item:hover,
 .footer-menu-item:focus {
-color: #fd9222;
+  color: #fd9222;
 }
 .footer-social-icons:hover,
-.footer-social-icons:focus{
-fill: #fd9222;}
->>>>>>> Stashed changes
+.footer-social-icons:focus {
+  fill: #fd9222;
+}
