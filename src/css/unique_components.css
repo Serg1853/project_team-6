@@ -61,6 +61,9 @@
   background: #1e1823;
 }
 .unique-components-img {
+
+}
+.img-position{
   padding: 28px 56px 0 56px;
 }
 .unique-components-text-under-img {
@@ -203,9 +206,10 @@ height: 270px;
   .unique-components-block {
     width: 270px;
   }
-  .unique-components-img {
-    padding: 28px 36px 0 28px;
-  }
+  .img-position{
+  padding: 28px 36px 0 28px;
+}
+  
   .unique-components-text-under-img {
     padding-top: 36px;
   }
