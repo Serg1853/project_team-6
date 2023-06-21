@@ -1,11 +1,5 @@
 
-@media screen and (min-width: 375px) {
-    .container {
-      width: 375px;
-    }
-  }
   .our-products-title {
-
     font-weight: 600;
     font-size: 24px;
     line-height: 1.16;
@@ -27,12 +21,10 @@
     border-radius: 15px;
   }
   .our-products-imag {
-    padding-top: 32px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 32px 20px 0 20px;
   }
   .our-products-description {
-    padding-top: 8px;
+    margin-top: 8px;
     padding-bottom: 32px;
     text-align: center;
   }
@@ -85,13 +77,6 @@
   }
   @media screen and (min-width: 768px) {
 
-
-    .container {
-      width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-
     .our-products-list{
         display: flex; 
         justify-content: center;
@@ -109,9 +94,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    .container {
-      width: 1200px;
-    }
     .our-products-section{
         padding-bottom: 128px;
     }
