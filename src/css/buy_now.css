@@ -185,7 +185,15 @@
     }
 }
 
+.picture-size-buy{
+    width: 84px;
+}
 
+@media screen and (min-width: 768px) {
+    .picture-size-buy{
+        width: 120px;
+    }
+}
 
 .buy-img {}
 
