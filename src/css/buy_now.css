@@ -185,35 +185,19 @@
     }
 }
 
-.picture-size-buy{
-    width: 84px;
-}
+
 
 @media screen and (min-width: 768px) {
-    .picture-size-buy{
+    .buy-img{
         width: 120px;
     }
 }
 
-.buy-img {}
 
-.curent {
-    display: block;
-}
 
-.curent-two {
-    display: none;
-}
 
-@media screen and (min-width: 768px) {
-    .curent {
-        display: none;
-    }
 
-    .curent-two {
-        display: block;
-    }
-}
+
 
 
 .buy-btn-shop {
