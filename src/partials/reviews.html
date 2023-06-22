@@ -9,18 +9,29 @@
       <li class="reviews-item-wrapper">
         <div class="reviews-item">
           <picture
-            ><img
+            ><source
+              srcset="
+                ./img/reviews/victoria@1x.jpg 1x,
+                ./img/reviews/victoria@2x.jpg 2x,
+                ./img/reviews/victoria@3x.jpg 3x
+              "
+              media="(min-width: 1200px)"/>
+              
+              <source
               class="reviews-img"
               srcset="
                 ./img/reviews/victoria@1x.jpg 1x,
                 ./img/reviews/victoria@2x.jpg 2x,
                 ./img/reviews/victoria@3x.jpg 3x
               "
+              media="(min-width: 375px)"/>
+
+              <img class="reviews-img"
               src="./img/reviews/victoria@1x.jpg"
               alt="Victoria Dobrzhanska"
               width="80"
-              height="80"
-          /></picture>
+              height="80"/>
+            </picture>
           <div class="reviews-thumb">
             <h3 class="reviews-name">Victoria Dobrzhanska</h3>
             <p class="reviews-text">
@@ -33,18 +44,27 @@
       <li class="reviews-item-wrapper">
         <div class="reviews-item">
           <picture
-            ><img
-              class="reviews-img"
+            ><source
               srcset="
                 ./img/reviews/nazar@1x.jpg 1x,
                 ./img/reviews/nazar@2x.jpg 2x,
                 ./img/reviews/nazar@3x.jpg 3x
-              "
-              src="./img/reviews/nazar@1x.jpg"
+              " 
+              media="(min-width: 1200px)"
+              />
+              <source
+              srcset="
+                ./img/reviews/nazar@1x.jpg 1x,
+                ./img/reviews/nazar@2x.jpg 2x,
+                ./img/reviews/nazar@3x.jpg 3x
+              " 
+              media="(min-width: 375px)"
+              />
+              <img class="reviews-img" src="./img/reviews/nazar@1x.jpg"
               alt="Nazar Babenko"
               width="80"
-              height="80"
-          /></picture>
+              height="80"/>
+            </picture>
           <div class="reviews-thumb">
             <h3 class="reviews-name">Nazar Babenko</h3>
             <p class="reviews-text">
@@ -58,18 +78,26 @@
       <li class="reviews-item-wrapper">
         <div class="reviews-item">
           <picture
-            ><img
-              class="reviews-img"
+            ><source
               srcset="
                 ./img/reviews/olena@1x.jpg 1x,
                 ./img/reviews/olena@2x.jpg 2x,
                 ./img/reviews/olena@3x.jpg 3x
               "
-              src="./img/reviews/olena@1x.jpg"
+              media="(min-width: 1200px)"/>
+              <source
+              srcset="
+                ./img/reviews/olena@1x.jpg 1x,
+                ./img/reviews/olena@2x.jpg 2x,
+                ./img/reviews/olena@3x.jpg 3x
+              "
+              media="(min-width: 375px)"/>
+
+              <img class="reviews-img" src="./img/reviews/olena@1x.jpg"
               alt="Olena Kampusch"
               width="80"
-              height="80"
-          /></picture>
+              height="80"/>
+        </picture>
           <div class="reviews-thumb">
             <h3 class="reviews-name">Olena Kampusch</h3>
             <p class="reviews-text">
