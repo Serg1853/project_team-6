@@ -1,10 +1,7 @@
+
 <div class="backdrop-buy is-hidden" data-top-sellers-modal>
   <div class="modal-buy">
-    <button
-      type="button"
-      class="modal-close-btn-buy"
-      data-top-sellers-modal-close
-    >
+    <button type="button" class="modal-close-btn-buy" data-top-sellers-modal-close>
       <svg class="modal-close-icon-buy" width="12" height="12">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
@@ -13,6 +10,7 @@
 
     <ul class="picture-list-buy list">
       <li class="picture-item-buy">
+        
         <picture>
           <!-- MOBILE -->
 
@@ -35,18 +33,15 @@
           />
 
           <img
-            class="buy-img curent"
+            class="buy-img"
             src="./img/buynow/mobile/picture-one.jpg"
             alt="chocolate"
+            height="69"
             width="84"
           />
-          <img
-            class="buy-img curent-two"
-            src="./img/buynow/mobile/picture-one.jpg"
-            alt="chocolate"
-            width="120"
-          />
+        
         </picture>
+      
         <button class="buy-btn-shop" type="button">100 g</button>
       </li>
       <li class="picture-item-buy">
@@ -71,17 +66,13 @@
             media="(min-width: 768px)"
           />
           <img
-            class="buy-img curent"
+            class="buy-img"
             src="./img/buynow/mobile/picture-two.jpg"
             alt="chocolate"
+            height="69"
             width="84"
           />
-          <img
-            class="buy-img curent-two"
-            src="./img/buynow/mobile/picture-two.jpg"
-            alt="chocolate"
-            width="120"
-          />
+         
         </picture>
         <button class="buy-btn-shop" type="button">200 g</button>
       </li>
@@ -107,17 +98,13 @@
             media="(min-width: 768px)"
           />
           <img
-            class="buy-img curent"
+            class="buy-img"
             src="./img/buynow/mobile/picture-three.jpg"
             alt="chocolate"
+            height="69"
             width="84"
           />
-          <img
-            class="buy-img curent-two"
-            src="./img/buynow/mobile/picture-three.jpg"
-            alt="chocolate"
-            width="120"
-          />
+        
         </picture>
         <button class="buy-btn-shop" type="button">300 g</button>
       </li>
@@ -129,37 +116,43 @@
           Personal information
         </label>
         <div class="container-two-input">
-          
-
-          <input
-            class="contact-form-input-buynow-two"
-            type="text"
-            name="user-surname-top-sellers"
-            id="user-name-buyer"
-            placeholder="Surname"
-            required
-            pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]
-          />
-        </div>
-      </div>
-      <div class="contact-form-two-input">
-        <label class="contact-form-wrapper-buynow" for="user-email">
-          Email
-        </label>
+            <input
+          class="contact-form-input-buynow-two"
+          type="text"
+          name="user-name"
+          id="user-name-buyer"
+          placeholder="Name"
+          required
+          pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]+"
+          autofocus
+        />
 
         <input
           class="contact-form-input-buynow-two"
-          type="email"
-          name="user-email"
-          id="user-email-top-sellers"
-          placeholder="Enter your email"
+          type="text"
+          name="user-surname"
+          id="user-surname-buyer"
+          placeholder="Surname"
           required
+          pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]+"
+          
         />
+        </div>
       </div>
       <div class="contact-form-two-input">
-        <label class="contact-form-wrapper-buynow" for="user-tel">
-          Phone number
-        </label>
+      <label class="contact-form-wrapper-buynow" for="user-email"> Email </label>
+        
+      <input
+        class="contact-form-input-buynow-two"
+        type="email"
+        name="user-email"
+        id="user-email-buyer"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+      <div class="contact-form-two-input">
+        <label class="contact-form-wrapper-buynow" for="user-tel"> Phone number </label>
         <div class="contact-form-input-wrapper input-block">
           <input
             class="contact-form-input-buynow-two form-input-buynow-two"
@@ -172,23 +165,21 @@
             title="xx-xxx-xx-xx"
           />
           <div class="container-number">
-            <svg
-              class="contact-form-input-icon-buynow"
-              aria-label="icon ukreine"
-              width="24"
-              height="24"
-            >
-              <use href="./img/icons.svg#icon-ukreine"></use>
-            </svg>
+          <svg
+            class="contact-form-input-icon-buynow"
+            aria-label="icon ukreine"
+            width="24"
+            height="24"
+          >
+            <use href="./img/icons.svg#icon-ukreine"></use>
+          </svg>
             <p class="number-ukreine">+380</p>
-          </div>
+        </div>
         </div>
       </div>
 
       <div class="contact-form-two-input">
-        <label class="contact-form-wrapper-buynow" for="user-card">
-          Card number
-        </label>
+        <label class="contact-form-wrapper-buynow" for="user-card"> Card number </label>
         <div class="contact-form-input-wrapper input-block">
           <input
             class="contact-form-input-buynow-two"
@@ -209,20 +200,20 @@
             <use href="./img/icons.svg#icon-mastercard"></use>
           </svg>
           <svg
-            class="contact-form-input-icon-buynow position-icon icon-media-two"
-            aria-label="icon mastercard"
-            width="44"
-            height="30"
-          >
-            <use href="./img/icons.svg#icon-mastercard"></use>
-          </svg>
+          class="contact-form-input-icon-buynow position-icon icon-media-two"
+          aria-label="icon mastercard"
+          width="44"
+          height="30"
+        >
+          <use href="./img/icons.svg#icon-mastercard"></use>
+        </svg>
         </div>
       </div>
 
-      <div class="contact-form-two-input">
-        <label class="contact-form-wrapper-buynow" for="user-comment">
-          Card number
-        </label>
+        <div class="contact-form-two-input">
+            <label class="contact-form-wrapper-buynow" for="user-comment"> 
+                Card number 
+            </label>
         <textarea
           class="contact-form-message-buy"
           name="user-comment"
@@ -235,3 +226,4 @@
     </form>
   </div>
 </div>
+
