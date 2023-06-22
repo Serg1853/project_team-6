@@ -18,13 +18,13 @@ ul {
   gap: 28px;
 }
 
-
 @media screen and (min-width: 320px) {
   .reviews-block {
     max-height: 235px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    row-gap: 0px;
+    column-gap: 16px;
     overflow-y: hidden;
   }
 }
@@ -32,15 +32,21 @@ ul {
   .reviews-block {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    row-gap: 28px;
+    column-gap: 16px;
     overflow-x: hidden;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 32px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .reviews-block {
     display: flex;
     flex-direction: row;
-    gap: 28px;
+    row-gap: 28px;
+    column-gap: 28px;
+    flex-wrap: nowrap;
+    flex-basis: calc((100% - 56px) / 3);
   }
 }
 
