@@ -17,6 +17,14 @@ ul {
     display: flex;
   }
 }
+@media screen and (min-width: 768px) {
+  .reviews-block {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      flex-basis: calc((100% - 16px )) / 2;
+  }
+}
 .reviews-block {
   gap: 28px;
 }
@@ -43,11 +51,6 @@ ul {
     color: var(--accent-color);
   }
   
-  .reviews-list {
-    display: flex;
-  
-    gap: 16px;
-  }
   
   .reviews-item-wrapper {
     padding-top: 38px;
