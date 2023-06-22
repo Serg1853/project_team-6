@@ -20,7 +20,6 @@ ul {
 
 @media screen and (min-width: 320px) {
   .reviews-block {
-    max-height: 235px;
     display: flex;
     flex-direction: column;
     row-gap: 0px;
@@ -29,6 +28,12 @@ ul {
   }
   .reviews-item-wrapper {
     width: auto;
+  }
+  .reviews-item-hide {
+    display: none;
+  }
+  .reviews-item-hide2 {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -46,6 +51,12 @@ ul {
     margin-bottom: 40px;
     width: 344px;
   }
+  .reviews-item-hide {
+    display: none;
+  }
+  .reviews-item-hide2 {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .reviews-block {
@@ -58,6 +69,12 @@ ul {
   }
   .reviews-item-wrapper {
     width: auto;
+  }
+  .reviews-item-hide {
+    display: block;
+  }
+  .reviews-item-hide2 {
+    display: block;
   }
 }
 
