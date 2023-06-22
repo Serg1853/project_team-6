@@ -12,23 +12,38 @@
 ul {
     list-style-type: none;
 }
-@media screen and (min-width: 1200px) {
+.reviews-block {
+  display:flex;
+  flex-direction: row;
+  gap: 28px;
+}
+
+
+@media screen and (min-width: 320px) {
   .reviews-block {
+    max-height: 235px;
     display: flex;
-    gap: 28px;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: hidden;
   }
 }
 @media screen and (min-width: 768px) {
   .reviews-block {
-      display: flex;
-      flex-direction: row;
-      gap: 16px;
-      flex-basis: calc((100% - 16px )) / 2;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: hidden;
   }
 }
-.reviews-block {
-  gap: 28px;
+@media screen and (min-width: 1200px) {
+  .reviews-block {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+  }
 }
+
 .reviews-section-upper {
     padding-bottom: 72px;
     text-align: center;
