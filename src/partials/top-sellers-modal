@@ -138,8 +138,7 @@
             id="user-name-buyer"
             placeholder="Surname"
             required
-            pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]+"
-            autofocus
+            pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]
           />
         </div>
       </div>
@@ -199,7 +198,6 @@
             placeholder="Enter card"
             required
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            autofocus
             title="xxxx-xxxx-xxxx-xxxx"
           />
           <svg
