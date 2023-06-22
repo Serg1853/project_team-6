@@ -27,6 +27,9 @@ ul {
     column-gap: 16px;
     overflow-y: hidden;
   }
+  .reviews-item-wrapper {
+    width: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .reviews-block {
@@ -41,6 +44,7 @@ ul {
   }
   .reviews-item-wrapper {
     margin-bottom: 40px;
+    width: 344px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -51,6 +55,9 @@ ul {
     column-gap: 28px;
     flex-wrap: nowrap;
     flex-basis: calc((100% - 56px) / 3);
+  }
+  .reviews-item-wrapper {
+    width: auto;
   }
 }
 
