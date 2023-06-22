@@ -35,8 +35,12 @@ ul {
     row-gap: 28px;
     column-gap: 16px;
     overflow-x: hidden;
+    overflow-y: hidden;
     flex-wrap: wrap;
     flex-basis: calc((100% - 32px) / 2);
+  }
+  .reviews-item-wrapper {
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
