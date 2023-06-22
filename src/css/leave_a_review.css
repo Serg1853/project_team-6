@@ -19,7 +19,7 @@
     padding: 32px 24px;
     border-radius: 15px;
     min-width: 311px;
-    height: 471px;
+    height: auto;
     max-height: 628px;
     max-width: 517px;
     overflow-y: scroll;
