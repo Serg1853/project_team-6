@@ -17,7 +17,25 @@ ul {
   flex-direction: row;
   gap: 28px;
 }
-
+@media screen and (max-width:320px) {
+  .reviews-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    column-gap: 16px;
+    overflow-y: hidden;
+  }
+  .reviews-item-wrapper {
+    width: auto;
+  }
+  .reviews-item-hide {
+    display: none;
+  }
+  .reviews-item-hide2 {
+    display: none;
+  }
+  
+}
 @media screen and (min-width: 320px) {
   .reviews-block {
     display: flex;
@@ -83,8 +101,90 @@ ul {
 }
 
 .reviews-section-upper {
+<<<<<<< Updated upstream
   padding-bottom: 72px;
   text-align: center;
+=======
+    padding-bottom: 72px;
+    text-align: center;
+  }
+  
+.reviews-section-tittle {
+    margin-bottom: 74px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--text-color-theme-light);
+    letter-spacing: -0.03em;
+  
+    text-align: center;
+  
+    text-transform: uppercase;
+  }
+  
+  .reviews-section-tittle-brown {
+    color: var(--accent-color);
+  }
+  
+  
+  .reviews-item-wrapper {
+    padding-top: 38px;
+  }
+  
+  .reviews-item {
+    position: relative;
+  
+    text-align: center;
+    background-color: var(--color1);
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    box-shadow: 0px 9.05px 26.57px rgba(215, 228, 249, 0.25);
+  }
+  
+  .reviews-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+  }
+  
+  .reviews-thumb {
+    padding-top: 56px;
+    padding-bottom: 26px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    .reviews-thumb {
+     width: 360px;
+    }
+  }
+  .reviews-name {
+    margin-bottom: 24px;
+  
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--text-color-theme-light);
+  }
+  
+  .reviews-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgba(17, 17, 17, 0.7);
+  }
+
+  .btn {
+    padding: 12px 28px;
+    border-radius: 100px;
+    border: 1px solid var(--color1);
+    font-weight: 600;
+    line-height: calc(17 / 14);
+    color: var(--color1);
+    background-color: transparent;
+    transition: transform .25s cubic-bezier(.4,0,.2,1),border-color 10ms cubic-bezier(.4,0,.2,1),color .25s cubic-bezier(.4,0,.2,1),background-color .25s cubic-bezier(.4,0,.2,1);
+>>>>>>> Stashed changes
 }
 
 .reviews-section-tittle {
