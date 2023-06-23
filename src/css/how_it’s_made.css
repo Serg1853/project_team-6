@@ -55,7 +55,22 @@
 .how-its-made-list .how-its-made-list-item:not(:last-child) {
   margin-bottom: 18px;
 }
-
+.how-its-made-video {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  /* padding-top: 56.25%; */
+  background: #eee;
+}
+.how-its-made-video-iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .how-its-made-img-wrapper {
   position: relative;
   margin-bottom: 20px;
@@ -75,9 +90,11 @@
 
   .how-its-made-list-wrapper {
     padding: 32px;
-    width: 614px;
+    /* width: 614px; */
   }
-
+  .how-its-made-video {
+    height: 400px;
+  }
   .how-its-made-list-topic {
     margin-bottom: 28px;
     max-width: 350px;
@@ -104,6 +121,8 @@
 
   .how-its-made-content-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
   }
 
