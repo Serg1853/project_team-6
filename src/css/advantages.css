@@ -39,7 +39,6 @@
     flex-wrap: wrap;
 }
 
-
 .advantages-svg {
     fill: var(--advantages-accent-color);
 }
@@ -59,6 +58,19 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
+.advantages-item {
+    animation: flipInX 1s;
+}
+
+@keyframes flipInX {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
 
 /*========== MEDIA ==========*/
 
