@@ -20,6 +20,18 @@
 
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 365px;
+
+    animation: moveX 3s infinite alternate;
+}
+
+@keyframes moveX {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(245px);
+    }
 }
 
 .advantages-list {
@@ -45,7 +57,6 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-
 /*========== MEDIA ==========*/
 
 /*========== MOBILE ==========*/
@@ -70,6 +81,16 @@
     .advantages-titel {
         margin-top: 22px;
         margin-bottom: 18px;
+    }
+
+    @keyframes moveX {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(220px);
+        }
     }
 }
 
