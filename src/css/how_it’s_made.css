@@ -51,7 +51,9 @@
 .how-its-made-list-item {
   margin-left: 16px;
 }
-
+.how-its-made-content-wrapper {
+  position: relative;
+}
 .how-its-made-list .how-its-made-list-item:not(:last-child) {
   margin-bottom: 18px;
 }
@@ -61,6 +63,9 @@
   height: 500px;
   /* padding-top: 56.25%; */
   background: #eee;
+  /* opacity: 0;
+  visibility: hidden;
+  pointer-events: none; */
 }
 .how-its-made-video-iframe {
   position: absolute;
@@ -73,6 +78,10 @@
 }
 .how-its-made-img-wrapper {
   position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin-bottom: 20px;
   border-radius: 15px;
 }
