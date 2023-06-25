@@ -5,171 +5,265 @@
       <span class="reviews-section-tittle-brown">Chocolate</span> is loved
     </h2>
     <!--clients-->
-    <ul class="reviews-block">
-      <li class="reviews-item-wrapper">
-        <div class="reviews-item">
-          <picture
-            ><source
-              srcset="
-                ./img/reviews/victoria@1x.jpg 1x,
-                ./img/reviews/victoria@2x.jpg 2x,
-                ./img/reviews/victoria@3x.jpg 3x
-              "
-              media="(min-width: 1200px)"/>
-              
-              <source
-              class="reviews-img"
-              srcset="
-                ./img/reviews/victoria@1x.jpg 1x,
-                ./img/reviews/victoria@2x.jpg 2x,
-                ./img/reviews/victoria@3x.jpg 3x
-              "
-              media="(min-width: 375px)"/>
 
-              <img class="reviews-img"
-              src="./img/reviews/victoria@1x.jpg"
-              alt="Victoria Dobrzhanska"
-              width="80"
-              height="80"/>
-            </picture>
-          <div class="reviews-thumb">
-            <h3 class="reviews-name">Victoria Dobrzhanska</h3>
-            <p class="reviews-text">
-              This is simply the best chocolate around, and I'm just thrilled to support a local company! Best local chocolate - world class :)
-            </p>
-          </div>
-        </div>
-      </li>
-      <li class="reviews-item-wrapper reviews-item-hide2">
-        <div class="reviews-item">
-          <picture
-            ><source
-              srcset="
-                ./img/reviews/nazar@1x.jpg 1x,
-                ./img/reviews/nazar@2x.jpg 2x,
-                ./img/reviews/nazar@3x.jpg 3x
-              " 
-              media="(min-width: 1200px)"
-              />
-              <source
-              srcset="
-                ./img/reviews/nazar@1x.jpg 1x,
-                ./img/reviews/nazar@2x.jpg 2x,
-                ./img/reviews/nazar@3x.jpg 3x
-              " 
-              media="(min-width: 375px)"
-              />
-              <img class="reviews-img" src="./img/reviews/nazar@1x.jpg"
-              alt="Nazar Babenko"
-              width="80"
-              height="80"/>
-            </picture>
-          <div class="reviews-thumb">
-            <h3 class="reviews-name">Nazar Babenko</h3>
-            <p class="reviews-text">
-              This chocolate confection is a delight! A delight! The  hazelnut cream is smooth, and the chocolate
-              is good.
-            </p>
-          </div>
-        </div>
-      </li>
-      <li class="reviews-item-wrapper reviews-item-hide">
-        <div class="reviews-item">
-          <picture
-            ><source
-              srcset="
-                ./img/reviews/olena@1x.jpg 1x,
-                ./img/reviews/olena@2x.jpg 2x,
-                ./img/reviews/olena@3x.jpg 3x
-              "
-              media="(min-width: 1200px)"/>
-              <source
-              srcset="
-                ./img/reviews/olena@1x.jpg 1x,
-                ./img/reviews/olena@2x.jpg 2x,
-                ./img/reviews/olena@3x.jpg 3x
-              "
-              media="(min-width: 375px)"/>
-
-              <img class="reviews-img" src="./img/reviews/olena@1x.jpg"
-              alt="Olena Kampusch"
-              width="80"
-              height="80"/>
-        </picture>
-          <div class="reviews-thumb">
-            <h3 class="reviews-name">Olena Kampusch</h3>
-            <p class="reviews-text">
-              Chocolate is a family favourite treat. Love the delicious smooth
-              chocolate and the creaminess inside. The wafer is soft but
-              crunchy.
-            </p>
-          </div>
-        </div>
-      </li>
-
-
-      <!--Mobile-->
-
-
-
-      <!--clients over viewport
-             <li class="reviews-item-wrapper">
-              <div class="reviews-item">
-                  <picture><img
-                      class="reviews-img"
-                      srcset="./img/reviews/natalia@1x.jpg 1x, ./img/reviews/natalia@2x.jpg 2x, ./img/reviews/natalia@3x.jpg 3x
-                      "
-                      src="./img/reviews/natalia@1x.jpg"
-                      alt="Natalia Sus"
-                      width="80"
-                      height="80"/></picture>
-                  <div class="reviews-thumb">
-                      <h3 class="reviews-name">Natalia Sus</h3>
-                      <p class="reviews-text">
-                        The chocolate assortment was delicious. Both dark and milk chocolate pieces were smooth and just right on the sweetness level.
-                      </p>
-                  </div>
-              </div>
-          </li>
-          <li class="reviews-item-wrapper">
-            <div class="reviews-item">
-                <picture><img
-                    class="reviews-img"
-                    srcset="./img/reviews/danylo@1x.jpg 1x, ./img/reviews/danylo@2x.jpg 2x, ./img/reviews/danylo@3x.jpg 3x
-                    "
-                    src="./img/reviews/danylo@1x.jpg"
-                    alt="Danilo Nottingham"
-                    width="80"
-                    height="80"/></picture>
-                <div class="reviews-thumb">
-                    <h3 class="reviews-name">Danilo Nottingham</h3>
-                    <p class="reviews-text">
-                      This is delicious. It so rich and flavorful you don’t need to use as many. I love topping an apple with almond butter and these chips for a snack.
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="reviews-item-wrapper">
+    <swiper-container
+      class="mySwiper"
+      pagination="true"
+      effect="coverflow"
+      grab-cursor="true"
+      centered-slides="true"
+      slides-per-view="auto"
+      coverflow-effect-rotate="50"
+      coverflow-effect-stretch="0"
+      coverflow-effect-depth="100"
+      coverflow-effect-modifier="1"
+      coverflow-effect-slide-shadows="true"
+    >
+      <swiper-slide>
+        <div class="reviews-item-wrapper">
           <div class="reviews-item">
-              <picture><img
-                  class="reviews-img"
-                  srcset="./img/reviews/iryna@1x.jpg 1x, ./img/reviews/iryna@2x.jpg 2x, ./img/reviews/iryna@3x.jpg 3x
-                  "
-                  src="./img/reviews/iryna@1x.jpg"
-                  alt="Irina Tydnyuk"
-                  width="80"
-                  height="80"/></picture>
-              <div class="reviews-thumb">
-                  <h3 class="reviews-name">Irina Tydnyuk</h3>
-                  <p class="reviews-text">
-                    This is simply the best chocolate around, and I'm just thrilled to support a local company! Best local chocolate - world class :)
-                  </p>
-              </div>
+            <picture
+              ><source
+                srcset="
+                  ./img/reviews/victoria@1x.jpg 1x,
+                  ./img/reviews/victoria@2x.jpg 2x,
+                  ./img/reviews/victoria@3x.jpg 3x
+                "
+                media="(min-width: 1200px)"
+              />
+
+              <source
+                class="reviews-img"
+                srcset="
+                  ./img/reviews/victoria@1x.jpg 1x,
+                  ./img/reviews/victoria@2x.jpg 2x,
+                  ./img/reviews/victoria@3x.jpg 3x
+                "
+                media="(min-width: 375px)"
+              />
+
+              <img
+                class="reviews-img"
+                src="./img/reviews/victoria@1x.jpg"
+                alt="Victoria Dobrzhanska"
+                width="80"
+                height="80"
+              />
+            </picture>
+            <div class="reviews-thumb">
+              <h3 class="reviews-name">Victoria Dobrzhanska</h3>
+              <p class="reviews-text">
+                This is simply the best chocolate around, and I'm just thrilled
+                to support a local company! Best local chocolate - world class
+                :)
+              </p>
+            </div>
           </div>
-      </li> -->
-    </ul>
-    <!--Slider-->
-    <!--Button-->
+        </div>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="reviews-item-wrapper">
+          <div class="reviews-item">
+            <picture
+              ><source
+                srcset="
+                  ./img/reviews/nazar@1x.jpg 1x,
+                  ./img/reviews/nazar@2x.jpg 2x,
+                  ./img/reviews/nazar@3x.jpg 3x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/reviews/nazar@1x.jpg 1x,
+                  ./img/reviews/nazar@2x.jpg 2x,
+                  ./img/reviews/nazar@3x.jpg 3x
+                "
+                media="(min-width: 375px)"
+              />
+              <img
+                class="reviews-img"
+                src="./img/reviews/nazar@1x.jpg"
+                alt="Nazar Babenko"
+                width="80"
+                height="80"
+              />
+            </picture>
+            <div class="reviews-thumb">
+              <h3 class="reviews-name">Nazar Babenko</h3>
+              <p class="reviews-text">
+                This chocolate confection is a delight! A delight! The hazelnut
+                cream is smooth, and the chocolate is good.
+              </p>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="reviews-item-wrapper">
+          <div class="reviews-item">
+            <picture
+              ><source
+                srcset="
+                  ./img/reviews/olena@1x.jpg 1x,
+                  ./img/reviews/olena@2x.jpg 2x,
+                  ./img/reviews/olena@3x.jpg 3x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/reviews/olena@1x.jpg 1x,
+                  ./img/reviews/olena@2x.jpg 2x,
+                  ./img/reviews/olena@3x.jpg 3x
+                "
+                media="(min-width: 375px)"
+              />
+
+              <img
+                class="reviews-img"
+                src="./img/reviews/olena@1x.jpg"
+                alt="Olena Kampusch"
+                width="80"
+                height="80"
+              />
+            </picture>
+            <div class="reviews-thumb">
+              <h3 class="reviews-name">Olena Kampusch</h3>
+              <p class="reviews-text">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="reviews-item-wrapper">
+          <div class="reviews-item">
+            <picture
+              ><source
+                srcset="
+                  ./img/reviews/natalia@1x.jpg 1x,
+                  ./img/reviews/natalia@2x.jpg 2x,
+                  ./img/reviews/natalia@3x.jpg 3x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/reviews/natalia@1x.jpg 1x,
+                  ./img/reviews/natalia@2x.jpg 2x,
+                  ./img/reviews/natalia@3x.jpg 3x
+                "
+                media="(min-width: 375px)"
+              />
+
+              <img
+                class="reviews-img"
+                src="./img/reviews/natalia@1x.jpg"
+                alt="Natalia Sus"
+                width="80"
+                height="80"
+              />
+            </picture>
+            <div class="reviews-thumb">
+              <h3 class="reviews-name">Natalia Sus</h3>
+              <p class="reviews-text">
+                The chocolate assortment was delicious. Both dark and milk
+                chocolate pieces were smooth and just right on the sweetness
+                level.
+              </p>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="reviews-item-wrapper">
+          <div class="reviews-item">
+            <picture
+              ><source
+                srcset="
+                  ./img/reviews/danylo@1x.jpg 1x,
+                  ./img/reviews/danylo@2x.jpg 2x,
+                  ./img/reviews/danylo@3x.jpg 3x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/reviews/danylo@1x.jpg 1x,
+                  ./img/reviews/danylo@2x.jpg 2x,
+                  ./img/reviews/danylo@3x.jpg 3x
+                "
+                media="(min-width: 375px)"
+              />
+
+              <img
+                class="reviews-img"
+                src="./img/reviews/danylo@1x.jpg"
+                alt="Danilo Nottingham"
+                width="80"
+                height="80"
+              />
+            </picture>
+            <div class="reviews-thumb">
+              <h3 class="reviews-name">Danilo Nottingham</h3>
+              <p class="reviews-text">
+                This is delicious. It so rich and flavorful you don’t need to
+                use as many. I love topping an apple with almond butter and
+                these chips for a snack.
+              </p>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="reviews-item-wrapper">
+          <div class="reviews-item">
+            <picture
+              ><source
+                srcset="
+                  ./img/reviews/iryna@1x.jpg 1x,
+                  ./img/reviews/iryna@2x.jpg 2x,
+                  ./img/reviews/iryna@3x.jpg 3x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/reviews/iryna@1x.jpg 1x,
+                  ./img/reviews/iryna@2x.jpg 2x,
+                  ./img/reviews/iryna@3x.jpg 3x
+                "
+                media="(min-width: 375px)"
+              />
+
+              <img
+                class="reviews-img"
+                src="./img/reviews/iryna@1x.jpg"
+                alt="Irina Tydnyuk"
+                width="80"
+                height="80"
+              />
+            </picture>
+            <div class="reviews-thumb">
+              <h3 class="reviews-name">Irina Tydnyuk</h3>
+              <p class="reviews-text">
+                This is simply the best chocolate around, and I'm just thrilled
+                to support a local company! Best local chocolate - world class
+                :)
+              </p>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
     <button type="button" class="btn btn-review" data-review-modal-open>
       Leave a review
     </button>
