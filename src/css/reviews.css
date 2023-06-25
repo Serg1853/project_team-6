@@ -190,3 +190,19 @@ ul {
   color: var(--color1);
   background-color: var(--accent-color);
 }
+    swiper-container {
+      width: 100%;
+    }
+
+    swiper-slide {
+      background-position: center;
+      background-size: cover;
+      max-width: 360px;
+      height: 300px;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 80px;
+      height: 80px;
+    }
