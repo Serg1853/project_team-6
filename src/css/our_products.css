@@ -1,8 +1,4 @@
 
-@import 'swiper/css/bundle';
-
-
-
 .our-products-title {
   font-weight: 600;
   font-size: 24px;
@@ -132,4 +128,8 @@
 .swiper-slide{
   display: block;
   
+}
+
+.swiper-pagination {
+  position: static;
 }

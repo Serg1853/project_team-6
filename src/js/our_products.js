@@ -1,3 +1,4 @@
+
 var swiper = new Swiper('.mySwiper', {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -7,7 +8,7 @@ var swiper = new Swiper('.mySwiper', {
   },
   // Responsive breakpoints
   breakpoints: {
-    '@0.75': {
+    375: {
       slidesPerView: 1,
       spaceBetween: 20,
       pagination: {
@@ -15,7 +16,7 @@ var swiper = new Swiper('.mySwiper', {
         clickable: true,
       },
     },
-    '@1.00': {
+    768: {
       slidesPerView: 3,
       spaceBetween: 15,
       pagination: {
@@ -23,7 +24,7 @@ var swiper = new Swiper('.mySwiper', {
         clickable: true,
       },
     },
-    '@1.50': {
+    1200: {
       slidesPerView: 4,
       spaceBetween: 18,
       pagination: {
